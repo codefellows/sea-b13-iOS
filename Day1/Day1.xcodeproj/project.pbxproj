@@ -1,0 +1,489 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF91D60018F310F000EF137E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF91D5FF18F310F000EF137E /* Foundation.framework */; };
+		EF91D60218F310F000EF137E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF91D60118F310F000EF137E /* CoreGraphics.framework */; };
+		EF91D60418F310F000EF137E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF91D60318F310F000EF137E /* UIKit.framework */; };
+		EF91D60A18F310F000EF137E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EF91D60818F310F000EF137E /* InfoPlist.strings */; };
+		EF91D60C18F310F000EF137E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EF91D60B18F310F000EF137E /* main.m */; };
+		EF91D61018F310F000EF137E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF91D60F18F310F000EF137E /* AppDelegate.m */; };
+		EF91D61318F310F000EF137E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF91D61118F310F000EF137E /* Main.storyboard */; };
+		EF91D61618F310F000EF137E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF91D61518F310F000EF137E /* ViewController.m */; };
+		EF91D61818F310F000EF137E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF91D61718F310F000EF137E /* Images.xcassets */; };
+		EF91D61F18F310F000EF137E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF91D61E18F310F000EF137E /* XCTest.framework */; };
+		EF91D62018F310F000EF137E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF91D5FF18F310F000EF137E /* Foundation.framework */; };
+		EF91D62118F310F000EF137E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF91D60318F310F000EF137E /* UIKit.framework */; };
+		EF91D62918F310F000EF137E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EF91D62718F310F000EF137E /* InfoPlist.strings */; };
+		EF91D62B18F310F000EF137E /* Day1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF91D62A18F310F000EF137E /* Day1Tests.m */; };
+		EF91D63618F3110000EF137E /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = EF91D63518F3110000EF137E /* Person.m */; };
+		EF91D63918F3288E00EF137E /* PersonTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF91D63818F3288E00EF137E /* PersonTableViewCell.m */; };
+		EF91D63B18F32A1900EF137E /* imageWithStars.png in Resources */ = {isa = PBXBuildFile; fileRef = EF91D63A18F32A1900EF137E /* imageWithStars.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF91D62218F310F000EF137E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF91D5F418F310F000EF137E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF91D5FB18F310F000EF137E;
+			remoteInfo = Day1;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EF91D5FC18F310F000EF137E /* Day1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Day1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF91D5FF18F310F000EF137E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EF91D60118F310F000EF137E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EF91D60318F310F000EF137E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EF91D60718F310F000EF137E /* Day1-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Day1-Info.plist"; sourceTree = "<group>"; };
+		EF91D60918F310F000EF137E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EF91D60B18F310F000EF137E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EF91D60D18F310F000EF137E /* Day1-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Day1-Prefix.pch"; sourceTree = "<group>"; };
+		EF91D60E18F310F000EF137E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EF91D60F18F310F000EF137E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EF91D61218F310F000EF137E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF91D61418F310F000EF137E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EF91D61518F310F000EF137E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EF91D61718F310F000EF137E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EF91D61D18F310F000EF137E /* Day1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Day1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF91D61E18F310F000EF137E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		EF91D62618F310F000EF137E /* Day1Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Day1Tests-Info.plist"; sourceTree = "<group>"; };
+		EF91D62818F310F000EF137E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EF91D62A18F310F000EF137E /* Day1Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Day1Tests.m; sourceTree = "<group>"; };
+		EF91D63418F3110000EF137E /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		EF91D63518F3110000EF137E /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		EF91D63718F3288E00EF137E /* PersonTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonTableViewCell.h; sourceTree = "<group>"; };
+		EF91D63818F3288E00EF137E /* PersonTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonTableViewCell.m; sourceTree = "<group>"; };
+		EF91D63A18F32A1900EF137E /* imageWithStars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imageWithStars.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF91D5F918F310F000EF137E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF91D60218F310F000EF137E /* CoreGraphics.framework in Frameworks */,
+				EF91D60418F310F000EF137E /* UIKit.framework in Frameworks */,
+				EF91D60018F310F000EF137E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF91D61A18F310F000EF137E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF91D61F18F310F000EF137E /* XCTest.framework in Frameworks */,
+				EF91D62118F310F000EF137E /* UIKit.framework in Frameworks */,
+				EF91D62018F310F000EF137E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF91D5F318F310F000EF137E = {
+			isa = PBXGroup;
+			children = (
+				EF91D60518F310F000EF137E /* Day1 */,
+				EF91D62418F310F000EF137E /* Day1Tests */,
+				EF91D5FE18F310F000EF137E /* Frameworks */,
+				EF91D5FD18F310F000EF137E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF91D5FD18F310F000EF137E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF91D5FC18F310F000EF137E /* Day1.app */,
+				EF91D61D18F310F000EF137E /* Day1Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF91D5FE18F310F000EF137E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EF91D5FF18F310F000EF137E /* Foundation.framework */,
+				EF91D60118F310F000EF137E /* CoreGraphics.framework */,
+				EF91D60318F310F000EF137E /* UIKit.framework */,
+				EF91D61E18F310F000EF137E /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF91D60518F310F000EF137E /* Day1 */ = {
+			isa = PBXGroup;
+			children = (
+				EF91D60E18F310F000EF137E /* AppDelegate.h */,
+				EF91D60F18F310F000EF137E /* AppDelegate.m */,
+				EF91D61118F310F000EF137E /* Main.storyboard */,
+				EF91D61418F310F000EF137E /* ViewController.h */,
+				EF91D61518F310F000EF137E /* ViewController.m */,
+				EF91D61718F310F000EF137E /* Images.xcassets */,
+				EF91D60618F310F000EF137E /* Supporting Files */,
+				EF91D63418F3110000EF137E /* Person.h */,
+				EF91D63518F3110000EF137E /* Person.m */,
+				EF91D63718F3288E00EF137E /* PersonTableViewCell.h */,
+				EF91D63818F3288E00EF137E /* PersonTableViewCell.m */,
+				EF91D63A18F32A1900EF137E /* imageWithStars.png */,
+			);
+			path = Day1;
+			sourceTree = "<group>";
+		};
+		EF91D60618F310F000EF137E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF91D60718F310F000EF137E /* Day1-Info.plist */,
+				EF91D60818F310F000EF137E /* InfoPlist.strings */,
+				EF91D60B18F310F000EF137E /* main.m */,
+				EF91D60D18F310F000EF137E /* Day1-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EF91D62418F310F000EF137E /* Day1Tests */ = {
+			isa = PBXGroup;
+			children = (
+				EF91D62A18F310F000EF137E /* Day1Tests.m */,
+				EF91D62518F310F000EF137E /* Supporting Files */,
+			);
+			path = Day1Tests;
+			sourceTree = "<group>";
+		};
+		EF91D62518F310F000EF137E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF91D62618F310F000EF137E /* Day1Tests-Info.plist */,
+				EF91D62718F310F000EF137E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF91D5FB18F310F000EF137E /* Day1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF91D62E18F310F000EF137E /* Build configuration list for PBXNativeTarget "Day1" */;
+			buildPhases = (
+				EF91D5F818F310F000EF137E /* Sources */,
+				EF91D5F918F310F000EF137E /* Frameworks */,
+				EF91D5FA18F310F000EF137E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Day1;
+			productName = Day1;
+			productReference = EF91D5FC18F310F000EF137E /* Day1.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EF91D61C18F310F000EF137E /* Day1Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF91D63118F310F000EF137E /* Build configuration list for PBXNativeTarget "Day1Tests" */;
+			buildPhases = (
+				EF91D61918F310F000EF137E /* Sources */,
+				EF91D61A18F310F000EF137E /* Frameworks */,
+				EF91D61B18F310F000EF137E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF91D62318F310F000EF137E /* PBXTargetDependency */,
+			);
+			name = Day1Tests;
+			productName = Day1Tests;
+			productReference = EF91D61D18F310F000EF137E /* Day1Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF91D5F418F310F000EF137E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Code Fellows";
+				TargetAttributes = {
+					EF91D61C18F310F000EF137E = {
+						TestTargetID = EF91D5FB18F310F000EF137E;
+					};
+				};
+			};
+			buildConfigurationList = EF91D5F718F310F000EF137E /* Build configuration list for PBXProject "Day1" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF91D5F318F310F000EF137E;
+			productRefGroup = EF91D5FD18F310F000EF137E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF91D5FB18F310F000EF137E /* Day1 */,
+				EF91D61C18F310F000EF137E /* Day1Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF91D5FA18F310F000EF137E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF91D61818F310F000EF137E /* Images.xcassets in Resources */,
+				EF91D60A18F310F000EF137E /* InfoPlist.strings in Resources */,
+				EF91D61318F310F000EF137E /* Main.storyboard in Resources */,
+				EF91D63B18F32A1900EF137E /* imageWithStars.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF91D61B18F310F000EF137E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF91D62918F310F000EF137E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF91D5F818F310F000EF137E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF91D61618F310F000EF137E /* ViewController.m in Sources */,
+				EF91D61018F310F000EF137E /* AppDelegate.m in Sources */,
+				EF91D63618F3110000EF137E /* Person.m in Sources */,
+				EF91D60C18F310F000EF137E /* main.m in Sources */,
+				EF91D63918F3288E00EF137E /* PersonTableViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF91D61918F310F000EF137E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF91D62B18F310F000EF137E /* Day1Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF91D62318F310F000EF137E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF91D5FB18F310F000EF137E /* Day1 */;
+			targetProxy = EF91D62218F310F000EF137E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EF91D60818F310F000EF137E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF91D60918F310F000EF137E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EF91D61118F310F000EF137E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF91D61218F310F000EF137E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EF91D62718F310F000EF137E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF91D62818F310F000EF137E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF91D62C18F310F000EF137E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EF91D62D18F310F000EF137E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF91D62F18F310F000EF137E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Day1/Day1-Prefix.pch";
+				INFOPLIST_FILE = "Day1/Day1-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EF91D63018F310F000EF137E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Day1/Day1-Prefix.pch";
+				INFOPLIST_FILE = "Day1/Day1-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		EF91D63218F310F000EF137E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Day1.app/Day1";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Day1/Day1-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Day1Tests/Day1Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		EF91D63318F310F000EF137E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Day1.app/Day1";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Day1/Day1-Prefix.pch";
+				INFOPLIST_FILE = "Day1Tests/Day1Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF91D5F718F310F000EF137E /* Build configuration list for PBXProject "Day1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF91D62C18F310F000EF137E /* Debug */,
+				EF91D62D18F310F000EF137E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF91D62E18F310F000EF137E /* Build configuration list for PBXNativeTarget "Day1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF91D62F18F310F000EF137E /* Debug */,
+				EF91D63018F310F000EF137E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF91D63118F310F000EF137E /* Build configuration list for PBXNativeTarget "Day1Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF91D63218F310F000EF137E /* Debug */,
+				EF91D63318F310F000EF137E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF91D5F418F310F000EF137E /* Project object */;
+}
