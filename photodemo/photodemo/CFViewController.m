@@ -9,7 +9,7 @@
 #import "CFViewController.h"
 #import <AssetsLibrary/AssetsLibrary.h>
 
-@interface CFViewController () <UIActionSheetDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate>
+@interface CFViewController () <UIActionSheetDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate, UIAlertViewDelegate>
 
 @property (strong,nonatomic) UIActionSheet *myActionSheet;
 @property (nonatomic, weak) IBOutlet UIImageView *imageView;
@@ -54,25 +54,32 @@
 
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
 {
-    
-    UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
-    
-    imagePicker.delegate = self;
-    imagePicker.allowsEditing = YES;
+    UIImagePickerControllerSourceType sourceType;
     
     if ([[actionSheet buttonTitleAtIndex:buttonIndex] isEqualToString:@"Take Photo"]) {
         
-        imagePicker.sourceType = UIImagePickerControllerSourceTypeCamera;
+        sourceType = UIImagePickerControllerSourceTypeCamera;
         
     } else if ([[actionSheet buttonTitleAtIndex:buttonIndex] isEqualToString:@"Choose Photo" ]) {
         
-        imagePicker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+        sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
         
     } else {
         
         return;
         
     }
+
+    [self showPickerWithSourceType:sourceType];
+}
+
+- (void)showPickerWithSourceType:(UIImagePickerControllerSourceType)sourceType
+{
+    UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
+    
+    imagePicker.delegate = self;
+    imagePicker.allowsEditing = YES;
+    imagePicker.sourceType = sourceType;
     
     [self presentViewController:imagePicker animated:YES completion:nil];
 }
@@ -81,11 +88,12 @@
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
-    _imageView.image = [info objectForKey:UIImagePickerControllerOriginalImage];
-    UIImage *originalImage = [info objectForKey:UIImagePickerControllerEditedImage];
+    UIImage *originalImage = [info objectForKey:UIImagePickerControllerOriginalImage];
     
     [self dismissViewControllerAnimated:YES completion:^{
         NSLog(@"Completed");
+
+        _imageView.image = originalImage;
         
         ALAssetsLibrary *assetsLibrary = [ALAssetsLibrary new];
         if ([ALAssetsLibrary authorizationStatus] == ALAuthorizationStatusAuthorized || [ALAssetsLibrary authorizationStatus] == ALAuthorizationStatusNotDetermined) {
@@ -110,11 +118,32 @@
     }];
 }
 
+#pragma mark - Sharing
 
+- (IBAction)shareActivity:(id)sender
+{
+    if (self.imageView.image) {
+        UIActivityViewController *activityVC = [[UIActivityViewController alloc] initWithActivityItems:@[_imageView.image]
+                                                                                 applicationActivities:nil];
+        
+        [self presentViewController:activityVC animated:YES completion:nil];
+    } else {
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Choose An Image First"
+                                                            message:nil
+                                                           delegate:self
+                                                  cancelButtonTitle:@"Cancel"
+                                                  otherButtonTitles:@"Choose Photo", nil];
+        [alertView show];
+    }
+}
 
+#pragma mark - UIAlertViewDelegate
 
-
-
-
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if ([[alertView buttonTitleAtIndex:buttonIndex] isEqualToString:@"Choose Photo"]) {
+        [self showPickerWithSourceType:UIImagePickerControllerSourceTypePhotoLibrary];
+    }
+}
 
 @end
