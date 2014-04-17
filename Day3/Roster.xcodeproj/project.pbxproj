@@ -37,6 +37,20 @@
 			remoteGlobalIDString = 4870B9D818F348FB00EE94B7;
 			remoteInfo = Roster;
 		};
+		EF25409519003BAC00573037 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF25409019003BAC00573037 /* Day1.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EF91D5FC18F310F000EF137E;
+			remoteInfo = Day1;
+		};
+		EF25409719003BAC00573037 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF25409019003BAC00573037 /* Day1.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EF91D61D18F310F000EF137E;
+			remoteInfo = Day1Tests;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +83,7 @@
 		4870BA1C18F3511100EE94B7 /* MBDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBDetailViewController.m; sourceTree = "<group>"; };
 		A26C0B7018F5B09000779B63 /* people.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = people.plist; sourceTree = "<group>"; };
 		A26C0B7418F5CC8B00779B63 /* Seattle_Seahawks.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Seattle_Seahawks.jpg; sourceTree = "<group>"; };
+		EF25409019003BAC00573037 /* Day1.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Day1.xcodeproj; path = ../../Day2/Day1.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +143,7 @@
 		4870B9E218F348FB00EE94B7 /* Roster */ = {
 			isa = PBXGroup;
 			children = (
+				EF25409019003BAC00573037 /* Day1.xcodeproj */,
 				4870B9EB18F348FB00EE94B7 /* MBAppDelegate.h */,
 				4870B9EC18F348FB00EE94B7 /* MBAppDelegate.m */,
 				A26C0B7418F5CC8B00779B63 /* Seattle_Seahawks.jpg */,
@@ -184,6 +200,15 @@
 				4870BA1918F34A1D00EE94B7 /* MBData.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		EF25409119003BAC00573037 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF25409619003BAC00573037 /* Day1.app */,
+				EF25409819003BAC00573037 /* Day1Tests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +275,12 @@
 			mainGroup = 4870B9D018F348FB00EE94B7;
 			productRefGroup = 4870B9DA18F348FB00EE94B7 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = EF25409119003BAC00573037 /* Products */;
+					ProjectRef = EF25409019003BAC00573037 /* Day1.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				4870B9D818F348FB00EE94B7 /* Roster */,
@@ -257,6 +288,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		EF25409619003BAC00573037 /* Day1.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = Day1.app;
+			remoteRef = EF25409519003BAC00573037 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EF25409819003BAC00573037 /* Day1Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = Day1Tests.xctest;
+			remoteRef = EF25409719003BAC00573037 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		4870B9D718F348FB00EE94B7 /* Resources */ = {
