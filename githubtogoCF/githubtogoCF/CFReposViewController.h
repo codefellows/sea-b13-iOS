@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CFBurgerProtocol.h"
 
 @interface CFReposViewController : UIViewController
+
+@property (nonatomic,unsafe_unretained) id <CFBurgerProtocol> burgerDelegate;
 
 @end

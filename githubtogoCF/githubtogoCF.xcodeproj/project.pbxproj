@@ -65,6 +65,7 @@
 		A289BC8919057ECA00FDFDF4 /* CFUsersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFUsersViewController.m; sourceTree = "<group>"; };
 		A289BC8B19057F1000FDFDF4 /* CFSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFSearchViewController.h; sourceTree = "<group>"; };
 		A289BC8C19057F1000FDFDF4 /* CFSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFSearchViewController.m; sourceTree = "<group>"; };
+		A2AD64621905944600B31ABC /* CFBurgerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CFBurgerProtocol.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +133,7 @@
 				A289BC8219057DB000FDFDF4 /* CFRootMenuViewController.h */,
 				A289BC8319057DB000FDFDF4 /* CFRootMenuViewController.m */,
 				A289BC8819057ECA00FDFDF4 /* CFUsersViewController.h */,
+				A2AD64621905944600B31ABC /* CFBurgerProtocol.h */,
 				A289BC8919057ECA00FDFDF4 /* CFUsersViewController.m */,
 				A289BC8519057E8D00FDFDF4 /* CFReposViewController.h */,
 				A289BC8619057E8D00FDFDF4 /* CFReposViewController.m */,
@@ -481,6 +483,7 @@
 				A289BC7E19057D2500FDFDF4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A289BC7F19057D2500FDFDF4 /* Build configuration list for PBXNativeTarget "githubtogoCFTests" */ = {
 			isa = XCConfigurationList;
@@ -489,6 +492,7 @@
 				A289BC8119057D2500FDFDF4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

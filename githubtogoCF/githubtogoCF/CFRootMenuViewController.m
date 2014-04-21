@@ -11,7 +11,7 @@
 #import "CFUsersViewController.h"
 #import "CFSearchViewController.h"
 
-@interface CFRootMenuViewController () <UIGestureRecognizerDelegate,UITableViewDataSource,UITableViewDelegate>
+@interface CFRootMenuViewController () <UIGestureRecognizerDelegate,UITableViewDataSource,UITableViewDelegate,CFBurgerProtocol>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @property (strong,nonatomic) NSArray *arrayOfViewControllers;
@@ -38,6 +38,7 @@
     
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
+    self.tableView.userInteractionEnabled = NO;
     
     [self setupChildViewControllers];
     [self setupDragRecognizer];
@@ -48,12 +49,15 @@
 {
     CFReposViewController *repoViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"repos"];
     repoViewController.title = @"My Repos";
+    repoViewController.burgerDelegate = self;
     
     CFUsersViewController *usersViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"users"];
     usersViewController.title = @"Following";
+    usersViewController.burgerDelegate = self;
     
     CFSearchViewController *searchViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"search"];
     searchViewController.title = @"Search";
+    searchViewController.burgerDelegate = self;
     
     
     self.arrayOfViewControllers = @[repoViewController,usersViewController,searchViewController];
@@ -117,19 +121,7 @@
     {
         if (self.topViewController.view.frame.origin.x > self.view.frame.size.width / 3)
         {
-            [UIView animateWithDuration:.4 animations:^{
-                self.topViewController.view.frame = CGRectMake(self.view.frame.size.width * .75, self.view.frame.origin.y, self.view.frame.size.width, self.view.frame.size.height);
-                
-            } completion:^(BOOL finished) {
-                
-                if (finished)
-                {
-                    self.tapToClose = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(closeMenu:)];
-                    [self.topViewController.view addGestureRecognizer:self.tapToClose];
-                    self.menuIsOpen = YES;
-                }
-                
-            }];
+            [self openMenu];
         }
         
         else
@@ -192,6 +184,37 @@
    }];
     
     
+}
+
+-(void)openMenu
+{
+    [UIView animateWithDuration:.4 animations:^{
+        self.topViewController.view.frame = CGRectMake(self.view.frame.size.width * .75, self.view.frame.origin.y, self.view.frame.size.width, self.view.frame.size.height);
+        
+    } completion:^(BOOL finished) {
+        
+        if (finished)
+        {
+            self.tapToClose = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(closeMenu:)];
+            [self.topViewController.view addGestureRecognizer:self.tapToClose];
+            self.menuIsOpen = YES;
+            self.tableView.userInteractionEnabled = YES;
+        }
+        
+    }];
+    
+}
+
+-(void)handleBurgerPressed
+{
+    if (self.menuIsOpen)
+    {
+        [self closeMenu:nil];
+    }
+    else
+    {
+        [self openMenu];
+    }
 }
 #pragma mark - UITableViewDataSource
 

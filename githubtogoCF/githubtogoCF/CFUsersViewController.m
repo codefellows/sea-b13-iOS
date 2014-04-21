@@ -34,6 +34,9 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+- (IBAction)burgerPressed:(id)sender {
+    [self.burgerDelegate handleBurgerPressed];
+}
 
 /*
 #pragma mark - Navigation
