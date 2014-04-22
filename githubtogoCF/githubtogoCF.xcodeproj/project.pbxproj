@@ -25,6 +25,7 @@
 		A289BC8719057E8D00FDFDF4 /* CFReposViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A289BC8619057E8D00FDFDF4 /* CFReposViewController.m */; };
 		A289BC8A19057ECA00FDFDF4 /* CFUsersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A289BC8919057ECA00FDFDF4 /* CFUsersViewController.m */; };
 		A289BC8D19057F1000FDFDF4 /* CFSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A289BC8C19057F1000FDFDF4 /* CFSearchViewController.m */; };
+		A2AD64651906DFDF00B31ABC /* CFNetworkController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AD64641906DFDF00B31ABC /* CFNetworkController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,8 @@
 		A289BC8B19057F1000FDFDF4 /* CFSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFSearchViewController.h; sourceTree = "<group>"; };
 		A289BC8C19057F1000FDFDF4 /* CFSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFSearchViewController.m; sourceTree = "<group>"; };
 		A2AD64621905944600B31ABC /* CFBurgerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CFBurgerProtocol.h; sourceTree = "<group>"; };
+		A2AD64631906DFDF00B31ABC /* CFNetworkController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFNetworkController.h; sourceTree = "<group>"; };
+		A2AD64641906DFDF00B31ABC /* CFNetworkController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFNetworkController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +130,8 @@
 			children = (
 				A289BC5C19057D2500FDFDF4 /* CFAppDelegate.h */,
 				A289BC5D19057D2500FDFDF4 /* CFAppDelegate.m */,
+				A2AD64631906DFDF00B31ABC /* CFNetworkController.h */,
+				A2AD64641906DFDF00B31ABC /* CFNetworkController.m */,
 				A289BC5F19057D2500FDFDF4 /* Main.storyboard */,
 				A289BC8B19057F1000FDFDF4 /* CFSearchViewController.h */,
 				A289BC8C19057F1000FDFDF4 /* CFSearchViewController.m */,
@@ -279,6 +284,7 @@
 				A289BC8419057DB000FDFDF4 /* CFRootMenuViewController.m in Sources */,
 				A289BC8D19057F1000FDFDF4 /* CFSearchViewController.m in Sources */,
 				A289BC6419057D2500FDFDF4 /* CFViewController.m in Sources */,
+				A2AD64651906DFDF00B31ABC /* CFNetworkController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
