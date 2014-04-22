@@ -21,6 +21,7 @@
     self.clearsSelectionOnViewWillAppear = NO;
     self.preferredContentSize = CGSizeMake(320.0, 600.0);
     [super awakeFromNib];
+    NSLog(@" hello");
 }
 
 - (void)viewDidLoad
