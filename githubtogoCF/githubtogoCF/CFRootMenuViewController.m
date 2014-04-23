@@ -99,7 +99,7 @@
     CGPoint velocity = [pan velocityInView:self.view];
     
     //NSLog(@" translation: %@",NSStringFromCGPoint(translatedPoint));
-    //NSLog(@" velocity: %@",NSStringFromCGPoint(velocity));
+//    NSLog(@" velocity: %@",NSStringFromCGPoint(velocity));
     
     if (pan.state == UIGestureRecognizerStateBegan)
     {
@@ -112,7 +112,8 @@
         if (translatedPoint.x > 0){
         self.topViewController.view.center = CGPointMake(self.topViewController.view.center.x + translatedPoint.x, self.topViewController.view.center.y);
         
-        [pan setTranslation:CGPointZero inView:self.view];
+            [pan setTranslation:CGPointZero inView:self.view];
+            NSLog(@"Translated Point: %f, %f", translatedPoint.x, translatedPoint.y);
         }
         
     }
@@ -144,6 +145,10 @@
     }
 
 }
+
+#pragma mark - Interactive Transitions
+
+
 
 -(void)closeMenu:(id)sender
 {
