@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CFNetworkController.h"
 
 @interface CFAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (strong,nonatomic) CFNetworkController *networkController;
+
 
 @end

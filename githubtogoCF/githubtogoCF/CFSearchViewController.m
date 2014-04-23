@@ -7,8 +7,16 @@
 //
 
 #import "CFSearchViewController.h"
+#import "CFAppDelegate.h"
 
-@interface CFSearchViewController ()
+@interface CFSearchViewController () <UITableViewDataSource,UITableViewDelegate,UISearchBarDelegate, NSURLSessionDelegate>
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
+
+@property (strong,nonatomic) NSMutableArray *arrayOfRepos;
+
+@property (weak,nonatomic) CFAppDelegate *appDelegate;
+@property (weak,nonatomic) CFNetworkController *networkController;
 
 @end
 
@@ -26,7 +34,52 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.appDelegate = [UIApplication sharedApplication].delegate;
+    self.networkController = self.appDelegate.networkController;
+    
+    
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
+    self.arrayOfRepos = [NSMutableArray new];
+    
+    [self.networkController requestOAuthAccess];
+    
+    
+    
+    
+    
+//    NSURL *repoSearchURL = [NSURL URLWithString:@"http://10.98.111.37:3000/repos.json"];
+//    NSData *repoData = [NSData dataWithContentsOfURL:repoSearchURL];
+//    
+//    id repoJSON = [NSJSONSerialization JSONObjectWithData:repoData options:NSJSONReadingMutableContainers error:nil];
+//    
+//    self.arrayOfRepos = repoJSON;
+//    [self.tableView reloadData];
+}
+
+- (void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath
+{
+    NSDictionary *repo = _arrayOfRepos[indexPath.row];
+    NSInteger repoID = [[repo objectForKey:@"id"] integerValue];
+    
+    NSURL *deleteURL = [NSURL URLWithString:[NSString stringWithFormat:@"http://10.98.111.37:3000/repos/%d.json", repoID]];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:deleteURL];
+    
+    [request setHTTPMethod:@"DELETE"];
+    
+    NSURLSession *session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
+    
+    NSURLSessionDataTask *deleteTask = [session dataTaskWithRequest:request
+                                                  completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+                                                      NSLog(@"Response: %@", response);
+                                                      if (error) {
+                                                          NSLog(@"Error Occurred: %@", error.localizedDescription);
+                                                      } else {
+                                                          [self.tableView reloadData];
+                                                      }
+                                                  }];
+    
+    [deleteTask resume];
 }
 
 - (void)didReceiveMemoryWarning
@@ -36,6 +89,21 @@
 }
 - (IBAction)burgerPressed:(id)sender {
     [self.burgerDelegate handleBurgerPressed];
+}
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return self.arrayOfRepos.count;
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+    NSDictionary *repoDictionary = self.arrayOfRepos[indexPath.row];
+    
+    cell.textLabel.text = repoDictionary[@"name"];
+    
+    return cell;
 }
 
 /*
