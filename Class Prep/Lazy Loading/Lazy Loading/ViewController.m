@@ -10,7 +10,9 @@
 #import "Photo.h"
 
 @interface ViewController () <UITableViewDataSource, UITableViewDelegate>
-
+{
+    BOOL lazyLoading;
+}
 @property (nonatomic, weak) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *photos;
 
@@ -22,6 +24,7 @@
 {
     [super viewDidLoad];
 
+    lazyLoading = YES;
     _photos = [NSMutableArray new];
     
     for (int i=0; i<100; i++) {
@@ -66,14 +69,21 @@
     
     cell.textLabel.text = photo.title;
     
-    if (photo.image) {
-        cell.imageView.image = photo.image;
+    if (lazyLoading) {
+        if (photo.image) {
+            cell.imageView.image = photo.image;
+        } else {
+            cell.imageView.image = nil;
+            [photo downloadImageWithCompletionBlock:^{
+                [tableView reloadRowsAtIndexPaths:@[indexPath]
+                                 withRowAnimation:UITableViewRowAnimationFade];
+            }];
+        }        
     } else {
-        cell.imageView.image = nil;
-        [photo downloadImageWithCompletionBlock:^{
-            [tableView reloadRowsAtIndexPaths:@[indexPath]
-                             withRowAnimation:UITableViewRowAnimationFade];
-        }];
+        NSURL *imageURL = [NSURL URLWithString:photo.url];
+        NSData *imageData = [NSData dataWithContentsOfURL:imageURL];
+        photo.image = [UIImage imageWithData:imageData];
+        cell.imageView.image = photo.image;
     }
     
     return cell;
