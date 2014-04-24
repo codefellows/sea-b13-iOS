@@ -1,0 +1,481 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EFB87376190884D90008DE81 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFB87375190884D90008DE81 /* Foundation.framework */; };
+		EFB87378190884D90008DE81 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFB87377190884D90008DE81 /* CoreGraphics.framework */; };
+		EFB8737A190884D90008DE81 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFB87379190884D90008DE81 /* UIKit.framework */; };
+		EFB87380190884D90008DE81 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EFB8737E190884D90008DE81 /* InfoPlist.strings */; };
+		EFB87382190884D90008DE81 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB87381190884D90008DE81 /* main.m */; };
+		EFB87386190884D90008DE81 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB87385190884D90008DE81 /* AppDelegate.m */; };
+		EFB87389190884D90008DE81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFB87387190884D90008DE81 /* Main.storyboard */; };
+		EFB8738C190884D90008DE81 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB8738B190884D90008DE81 /* ViewController.m */; };
+		EFB8738E190884D90008DE81 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFB8738D190884D90008DE81 /* Images.xcassets */; };
+		EFB87395190884D90008DE81 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFB87394190884D90008DE81 /* XCTest.framework */; };
+		EFB87396190884D90008DE81 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFB87375190884D90008DE81 /* Foundation.framework */; };
+		EFB87397190884D90008DE81 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFB87379190884D90008DE81 /* UIKit.framework */; };
+		EFB8739F190884D90008DE81 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EFB8739D190884D90008DE81 /* InfoPlist.strings */; };
+		EFB873A1190884D90008DE81 /* Lazy_LoadingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB873A0190884D90008DE81 /* Lazy_LoadingTests.m */; };
+		EFB873AB190885240008DE81 /* 3d.png in Resources */ = {isa = PBXBuildFile; fileRef = EFB873AA190885240008DE81 /* 3d.png */; };
+		EFB873AE190888BF0008DE81 /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB873AD190888BF0008DE81 /* Photo.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EFB87398190884D90008DE81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFB8736A190884D90008DE81 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EFB87371190884D90008DE81;
+			remoteInfo = "Lazy Loading";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EFB87372190884D90008DE81 /* Lazy Loading.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lazy Loading.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFB87375190884D90008DE81 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EFB87377190884D90008DE81 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EFB87379190884D90008DE81 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EFB8737D190884D90008DE81 /* Lazy Loading-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Lazy Loading-Info.plist"; sourceTree = "<group>"; };
+		EFB8737F190884D90008DE81 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EFB87381190884D90008DE81 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EFB87383190884D90008DE81 /* Lazy Loading-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Lazy Loading-Prefix.pch"; sourceTree = "<group>"; };
+		EFB87384190884D90008DE81 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EFB87385190884D90008DE81 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EFB87388190884D90008DE81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EFB8738A190884D90008DE81 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EFB8738B190884D90008DE81 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EFB8738D190884D90008DE81 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EFB87393190884D90008DE81 /* Lazy LoadingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lazy LoadingTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFB87394190884D90008DE81 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		EFB8739C190884D90008DE81 /* Lazy LoadingTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Lazy LoadingTests-Info.plist"; sourceTree = "<group>"; };
+		EFB8739E190884D90008DE81 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EFB873A0190884D90008DE81 /* Lazy_LoadingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Lazy_LoadingTests.m; sourceTree = "<group>"; };
+		EFB873AA190885240008DE81 /* 3d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3d.png; sourceTree = "<group>"; };
+		EFB873AC190888BF0008DE81 /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photo.h; sourceTree = "<group>"; };
+		EFB873AD190888BF0008DE81 /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EFB8736F190884D90008DE81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFB87378190884D90008DE81 /* CoreGraphics.framework in Frameworks */,
+				EFB8737A190884D90008DE81 /* UIKit.framework in Frameworks */,
+				EFB87376190884D90008DE81 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFB87390190884D90008DE81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFB87395190884D90008DE81 /* XCTest.framework in Frameworks */,
+				EFB87397190884D90008DE81 /* UIKit.framework in Frameworks */,
+				EFB87396190884D90008DE81 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EFB87369190884D90008DE81 = {
+			isa = PBXGroup;
+			children = (
+				EFB8737B190884D90008DE81 /* Lazy Loading */,
+				EFB8739A190884D90008DE81 /* Lazy LoadingTests */,
+				EFB87374190884D90008DE81 /* Frameworks */,
+				EFB87373190884D90008DE81 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EFB87373190884D90008DE81 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EFB87372190884D90008DE81 /* Lazy Loading.app */,
+				EFB87393190884D90008DE81 /* Lazy LoadingTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EFB87374190884D90008DE81 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EFB87375190884D90008DE81 /* Foundation.framework */,
+				EFB87377190884D90008DE81 /* CoreGraphics.framework */,
+				EFB87379190884D90008DE81 /* UIKit.framework */,
+				EFB87394190884D90008DE81 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EFB8737B190884D90008DE81 /* Lazy Loading */ = {
+			isa = PBXGroup;
+			children = (
+				EFB873AA190885240008DE81 /* 3d.png */,
+				EFB87384190884D90008DE81 /* AppDelegate.h */,
+				EFB87385190884D90008DE81 /* AppDelegate.m */,
+				EFB87387190884D90008DE81 /* Main.storyboard */,
+				EFB8738A190884D90008DE81 /* ViewController.h */,
+				EFB8738B190884D90008DE81 /* ViewController.m */,
+				EFB8738D190884D90008DE81 /* Images.xcassets */,
+				EFB8737C190884D90008DE81 /* Supporting Files */,
+				EFB873AC190888BF0008DE81 /* Photo.h */,
+				EFB873AD190888BF0008DE81 /* Photo.m */,
+			);
+			path = "Lazy Loading";
+			sourceTree = "<group>";
+		};
+		EFB8737C190884D90008DE81 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EFB8737D190884D90008DE81 /* Lazy Loading-Info.plist */,
+				EFB8737E190884D90008DE81 /* InfoPlist.strings */,
+				EFB87381190884D90008DE81 /* main.m */,
+				EFB87383190884D90008DE81 /* Lazy Loading-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EFB8739A190884D90008DE81 /* Lazy LoadingTests */ = {
+			isa = PBXGroup;
+			children = (
+				EFB873A0190884D90008DE81 /* Lazy_LoadingTests.m */,
+				EFB8739B190884D90008DE81 /* Supporting Files */,
+			);
+			path = "Lazy LoadingTests";
+			sourceTree = "<group>";
+		};
+		EFB8739B190884D90008DE81 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EFB8739C190884D90008DE81 /* Lazy LoadingTests-Info.plist */,
+				EFB8739D190884D90008DE81 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EFB87371190884D90008DE81 /* Lazy Loading */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFB873A4190884D90008DE81 /* Build configuration list for PBXNativeTarget "Lazy Loading" */;
+			buildPhases = (
+				EFB8736E190884D90008DE81 /* Sources */,
+				EFB8736F190884D90008DE81 /* Frameworks */,
+				EFB87370190884D90008DE81 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Lazy Loading";
+			productName = "Lazy Loading";
+			productReference = EFB87372190884D90008DE81 /* Lazy Loading.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EFB87392190884D90008DE81 /* Lazy LoadingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFB873A7190884D90008DE81 /* Build configuration list for PBXNativeTarget "Lazy LoadingTests" */;
+			buildPhases = (
+				EFB8738F190884D90008DE81 /* Sources */,
+				EFB87390190884D90008DE81 /* Frameworks */,
+				EFB87391190884D90008DE81 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EFB87399190884D90008DE81 /* PBXTargetDependency */,
+			);
+			name = "Lazy LoadingTests";
+			productName = "Lazy LoadingTests";
+			productReference = EFB87393190884D90008DE81 /* Lazy LoadingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EFB8736A190884D90008DE81 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Code Fellows";
+				TargetAttributes = {
+					EFB87392190884D90008DE81 = {
+						TestTargetID = EFB87371190884D90008DE81;
+					};
+				};
+			};
+			buildConfigurationList = EFB8736D190884D90008DE81 /* Build configuration list for PBXProject "Lazy Loading" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EFB87369190884D90008DE81;
+			productRefGroup = EFB87373190884D90008DE81 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EFB87371190884D90008DE81 /* Lazy Loading */,
+				EFB87392190884D90008DE81 /* Lazy LoadingTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EFB87370190884D90008DE81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFB873AB190885240008DE81 /* 3d.png in Resources */,
+				EFB8738E190884D90008DE81 /* Images.xcassets in Resources */,
+				EFB87380190884D90008DE81 /* InfoPlist.strings in Resources */,
+				EFB87389190884D90008DE81 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFB87391190884D90008DE81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFB8739F190884D90008DE81 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EFB8736E190884D90008DE81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFB873AE190888BF0008DE81 /* Photo.m in Sources */,
+				EFB8738C190884D90008DE81 /* ViewController.m in Sources */,
+				EFB87386190884D90008DE81 /* AppDelegate.m in Sources */,
+				EFB87382190884D90008DE81 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFB8738F190884D90008DE81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFB873A1190884D90008DE81 /* Lazy_LoadingTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EFB87399190884D90008DE81 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EFB87371190884D90008DE81 /* Lazy Loading */;
+			targetProxy = EFB87398190884D90008DE81 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EFB8737E190884D90008DE81 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EFB8737F190884D90008DE81 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EFB87387190884D90008DE81 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EFB87388190884D90008DE81 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EFB8739D190884D90008DE81 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EFB8739E190884D90008DE81 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EFB873A2190884D90008DE81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EFB873A3190884D90008DE81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EFB873A5190884D90008DE81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Lazy Loading/Lazy Loading-Prefix.pch";
+				INFOPLIST_FILE = "Lazy Loading/Lazy Loading-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EFB873A6190884D90008DE81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Lazy Loading/Lazy Loading-Prefix.pch";
+				INFOPLIST_FILE = "Lazy Loading/Lazy Loading-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		EFB873A8190884D90008DE81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Lazy Loading.app/Lazy Loading";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Lazy Loading/Lazy Loading-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Lazy LoadingTests/Lazy LoadingTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		EFB873A9190884D90008DE81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Lazy Loading.app/Lazy Loading";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Lazy Loading/Lazy Loading-Prefix.pch";
+				INFOPLIST_FILE = "Lazy LoadingTests/Lazy LoadingTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EFB8736D190884D90008DE81 /* Build configuration list for PBXProject "Lazy Loading" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFB873A2190884D90008DE81 /* Debug */,
+				EFB873A3190884D90008DE81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFB873A4190884D90008DE81 /* Build configuration list for PBXNativeTarget "Lazy Loading" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFB873A5190884D90008DE81 /* Debug */,
+				EFB873A6190884D90008DE81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EFB873A7190884D90008DE81 /* Build configuration list for PBXNativeTarget "Lazy LoadingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFB873A8190884D90008DE81 /* Debug */,
+				EFB873A9190884D90008DE81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EFB8736A190884D90008DE81 /* Project object */;
+}
