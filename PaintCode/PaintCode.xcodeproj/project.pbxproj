@@ -21,6 +21,7 @@
 		EFF21CB8190EBA0E00942A23 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFF21C9A190EBA0E00942A23 /* UIKit.framework */; };
 		EFF21CC0190EBA0E00942A23 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EFF21CBE190EBA0E00942A23 /* InfoPlist.strings */; };
 		EFF21CC2190EBA0E00942A23 /* PaintCodeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF21CC1190EBA0E00942A23 /* PaintCodeTests.m */; };
+		EFF21CCD190EBA1F00942A23 /* CoffeeWheelView.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF21CCC190EBA1F00942A23 /* CoffeeWheelView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		EFF21CBD190EBA0E00942A23 /* PaintCodeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PaintCodeTests-Info.plist"; sourceTree = "<group>"; };
 		EFF21CBF190EBA0E00942A23 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EFF21CC1190EBA0E00942A23 /* PaintCodeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaintCodeTests.m; sourceTree = "<group>"; };
+		EFF21CCB190EBA1F00942A23 /* CoffeeWheelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoffeeWheelView.h; sourceTree = "<group>"; };
+		EFF21CCC190EBA1F00942A23 /* CoffeeWheelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoffeeWheelView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +122,8 @@
 				EFF21CAC190EBA0E00942A23 /* ViewController.m */,
 				EFF21CAE190EBA0E00942A23 /* Images.xcassets */,
 				EFF21C9D190EBA0E00942A23 /* Supporting Files */,
+				EFF21CCB190EBA1F00942A23 /* CoffeeWheelView.h */,
+				EFF21CCC190EBA1F00942A23 /* CoffeeWheelView.m */,
 			);
 			path = PaintCode;
 			sourceTree = "<group>";
@@ -249,6 +254,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFF21CCD190EBA1F00942A23 /* CoffeeWheelView.m in Sources */,
 				EFF21CAD190EBA0E00942A23 /* ViewController.m in Sources */,
 				EFF21CA7190EBA0E00942A23 /* AppDelegate.m in Sources */,
 				EFF21CA3190EBA0E00942A23 /* main.m in Sources */,

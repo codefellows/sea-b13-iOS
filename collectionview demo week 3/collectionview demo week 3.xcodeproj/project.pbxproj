@@ -22,6 +22,9 @@
 		A2E114B2190976760025E2A0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A2E114B0190976760025E2A0 /* InfoPlist.strings */; };
 		A2E114B4190976760025E2A0 /* collectionview_demo_week_3Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E114B3190976760025E2A0 /* collectionview_demo_week_3Tests.m */; };
 		A2E114BF19097A390025E2A0 /* CFCustomFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E114BE19097A390025E2A0 /* CFCustomFlowLayout.m */; };
+		EFC5E5B21909816800B0F5C4 /* GLFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC5E5AF1909816800B0F5C4 /* GLFlowLayout.m */; };
+		EFC5E5B31909816800B0F5C4 /* GLGooglePlusLikeLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC5E5B11909816800B0F5C4 /* GLGooglePlusLikeLayout.m */; };
+		EFC5E5B51909816F00B0F5C4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFC5E5B41909816F00B0F5C4 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +59,11 @@
 		A2E114B3190976760025E2A0 /* collectionview_demo_week_3Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = collectionview_demo_week_3Tests.m; sourceTree = "<group>"; };
 		A2E114BD19097A390025E2A0 /* CFCustomFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFCustomFlowLayout.h; sourceTree = "<group>"; };
 		A2E114BE19097A390025E2A0 /* CFCustomFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFCustomFlowLayout.m; sourceTree = "<group>"; };
+		EFC5E5AE1909816800B0F5C4 /* GLFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLFlowLayout.h; sourceTree = "<group>"; };
+		EFC5E5AF1909816800B0F5C4 /* GLFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLFlowLayout.m; sourceTree = "<group>"; };
+		EFC5E5B01909816800B0F5C4 /* GLGooglePlusLikeLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLGooglePlusLikeLayout.h; sourceTree = "<group>"; };
+		EFC5E5B11909816800B0F5C4 /* GLGooglePlusLikeLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLGooglePlusLikeLayout.m; sourceTree = "<group>"; };
+		EFC5E5B41909816F00B0F5C4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFC5E5B51909816F00B0F5C4 /* QuartzCore.framework in Frameworks */,
 				A2E1148B190976760025E2A0 /* CoreGraphics.framework in Frameworks */,
 				A2E1148D190976760025E2A0 /* UIKit.framework in Frameworks */,
 				A2E11489190976760025E2A0 /* Foundation.framework in Frameworks */,
@@ -104,6 +113,7 @@
 		A2E11487190976750025E2A0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EFC5E5B41909816F00B0F5C4 /* QuartzCore.framework */,
 				A2E11488190976750025E2A0 /* Foundation.framework */,
 				A2E1148A190976760025E2A0 /* CoreGraphics.framework */,
 				A2E1148C190976760025E2A0 /* UIKit.framework */,
@@ -115,6 +125,7 @@
 		A2E1148E190976760025E2A0 /* collectionview demo week 3 */ = {
 			isa = PBXGroup;
 			children = (
+				EFC5E5AD1909816800B0F5C4 /* GLGooglePlusLikeLayout */,
 				A2E11497190976760025E2A0 /* CFAppDelegate.h */,
 				A2E11498190976760025E2A0 /* CFAppDelegate.m */,
 				A2E1149A190976760025E2A0 /* Main.storyboard */,
@@ -155,6 +166,17 @@
 				A2E114B0190976760025E2A0 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EFC5E5AD1909816800B0F5C4 /* GLGooglePlusLikeLayout */ = {
+			isa = PBXGroup;
+			children = (
+				EFC5E5AE1909816800B0F5C4 /* GLFlowLayout.h */,
+				EFC5E5AF1909816800B0F5C4 /* GLFlowLayout.m */,
+				EFC5E5B01909816800B0F5C4 /* GLGooglePlusLikeLayout.h */,
+				EFC5E5B11909816800B0F5C4 /* GLGooglePlusLikeLayout.m */,
+			);
+			path = GLGooglePlusLikeLayout;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +279,8 @@
 			files = (
 				A2E11495190976760025E2A0 /* main.m in Sources */,
 				A2E114BF19097A390025E2A0 /* CFCustomFlowLayout.m in Sources */,
+				EFC5E5B31909816800B0F5C4 /* GLGooglePlusLikeLayout.m in Sources */,
+				EFC5E5B21909816800B0F5C4 /* GLFlowLayout.m in Sources */,
 				A2E11499190976760025E2A0 /* CFAppDelegate.m in Sources */,
 				A2E1149F190976760025E2A0 /* CFViewController.m in Sources */,
 			);
@@ -463,6 +487,7 @@
 				A2E114B9190976760025E2A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A2E114BA190976760025E2A0 /* Build configuration list for PBXNativeTarget "collectionview demo week 3Tests" */ = {
 			isa = XCConfigurationList;
@@ -471,6 +496,7 @@
 				A2E114BC190976760025E2A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

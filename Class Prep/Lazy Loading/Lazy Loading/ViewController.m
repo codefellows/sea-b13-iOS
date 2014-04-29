@@ -68,23 +68,28 @@
     Photo *photo = [_photos objectAtIndex:indexPath.row];
     
     cell.textLabel.text = photo.title;
-    
-    if (lazyLoading) {
-        if (photo.image) {
-            cell.imageView.image = photo.image;
-        } else {
-            cell.imageView.image = nil;
+    if (photo.image) {
+        cell.imageView.image = photo.image;
+    } else {
+        cell.imageView.image = nil;
+        
+        if (lazyLoading) {
             [photo downloadImageWithCompletionBlock:^{
                 [tableView reloadRowsAtIndexPaths:@[indexPath]
-                                 withRowAnimation:UITableViewRowAnimationFade];
+                                 withRowAnimation:UITableViewRowAnimationLeft];
             }];
-        }        
-    } else {
-        NSURL *imageURL = [NSURL URLWithString:photo.url];
-        NSData *imageData = [NSData dataWithContentsOfURL:imageURL];
-        photo.image = [UIImage imageWithData:imageData];
-        cell.imageView.image = photo.image;
+        } else {
+            [[NSOperationQueue new] addOperationWithBlock:^{
+                NSURL *imageURL = [NSURL URLWithString:photo.url];
+                NSData *imageData = [NSData dataWithContentsOfURL:imageURL];
+                photo.image = [UIImage imageWithData:imageData];
+                [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+                    cell.imageView.image = photo.image;
+                }];
+            }];
+        }
     }
+    
     
     return cell;
 }
