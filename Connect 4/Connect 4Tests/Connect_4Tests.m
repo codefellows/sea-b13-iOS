@@ -54,4 +54,14 @@
     XCTAssertEqual([_gameBoard.players.lastObject playerColor], [UIColor redColor], @"Player two should be red color");
 }
 
+- (void)testNewGamePlayersExist
+{
+    Player *playerOne = [_gameBoard.players firstObject];
+    Player *playerTwo = [_gameBoard.players lastObject];
+    
+    XCTAssertNotNil(playerOne, @"Player One should not be nil");
+    XCTAssertNotNil(playerTwo, @"Player One should not be nil");
+
+}
+
 @end
