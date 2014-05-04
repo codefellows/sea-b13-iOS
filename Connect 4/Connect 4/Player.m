@@ -13,7 +13,7 @@
 - (instancetype)initWithColor:(UIColor *)playerColor
 {
     if (self = [super init]) {
-        
+        self.playerColor = playerColor;
     }
     
     return self;
