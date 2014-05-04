@@ -13,6 +13,8 @@
 
 @interface Connect_4Tests : XCTestCase
 
+@property (nonatomic, strong) GameBoard *gameBoard;
+
 @end
 
 @implementation Connect_4Tests
@@ -21,7 +23,7 @@
 {
     [super setUp];
 
-    
+    _gameBoard = [[GameBoard alloc] initWithPlayers];
 }
 
 - (void)tearDown
@@ -42,13 +44,14 @@
 
 - (void)testNewGamePlayerCount
 {
-    GameBoard *gameBoard = [[GameBoard alloc] initWithPlayers];
+    XCTAssertTrue(_gameBoard.players.count == 2, @"New games should start with two players");
+}
 
-    XCTAssertTrue(gameBoard.players.count == 2, @"New games should start with two players");
+- (void)testNewGamePlayerColors
+{
+    XCTAssertEqual([_gameBoard.players.firstObject playerColor], [UIColor blackColor], @"Player one should be black color");
     
-//    Player *playerOne = [[Player alloc] initWithColor:[UIColor blackColor]];
-//    Player *playerTwo = [[Player alloc] initWithColor:[UIColor redColor]];
-
+    XCTAssertEqual([_gameBoard.players.lastObject playerColor], [UIColor redColor], @"Player two should be red color");
 }
 
 @end
