@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF519F601916D44700D872CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF519F5F1916D44700D872CD /* Foundation.framework */; };
+		EF519F621916D44700D872CD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF519F611916D44700D872CD /* CoreGraphics.framework */; };
+		EF519F641916D44700D872CD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF519F631916D44700D872CD /* UIKit.framework */; };
+		EF519F6A1916D44700D872CD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EF519F681916D44700D872CD /* InfoPlist.strings */; };
+		EF519F6C1916D44700D872CD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EF519F6B1916D44700D872CD /* main.m */; };
+		EF519F701916D44700D872CD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF519F6F1916D44700D872CD /* AppDelegate.m */; };
+		EF519F731916D44700D872CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF519F711916D44700D872CD /* Main.storyboard */; };
+		EF519F761916D44700D872CD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF519F751916D44700D872CD /* ViewController.m */; };
+		EF519F781916D44700D872CD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF519F771916D44700D872CD /* Images.xcassets */; };
+		EF519F7F1916D44700D872CD /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF519F7E1916D44700D872CD /* XCTest.framework */; };
+		EF519F801916D44700D872CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF519F5F1916D44700D872CD /* Foundation.framework */; };
+		EF519F811916D44700D872CD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF519F631916D44700D872CD /* UIKit.framework */; };
+		EF519F891916D44700D872CD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EF519F871916D44700D872CD /* InfoPlist.strings */; };
+		EF519F8B1916D44700D872CD /* Connect_4Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF519F8A1916D44700D872CD /* Connect_4Tests.m */; };
+		EF519F991916D47B00D872CD /* GameBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = EF519F981916D47B00D872CD /* GameBoard.m */; };
+		EF519F9C1916D48900D872CD /* GamePiece.m in Sources */ = {isa = PBXBuildFile; fileRef = EF519F9B1916D48900D872CD /* GamePiece.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF519F821916D44700D872CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF519F541916D44700D872CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF519F5B1916D44700D872CD;
+			remoteInfo = "Connect 4";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EF519F5C1916D44700D872CD /* Connect 4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Connect 4.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF519F5F1916D44700D872CD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EF519F611916D44700D872CD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EF519F631916D44700D872CD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EF519F671916D44700D872CD /* Connect 4-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Connect 4-Info.plist"; sourceTree = "<group>"; };
+		EF519F691916D44700D872CD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EF519F6B1916D44700D872CD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EF519F6D1916D44700D872CD /* Connect 4-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Connect 4-Prefix.pch"; sourceTree = "<group>"; };
+		EF519F6E1916D44700D872CD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EF519F6F1916D44700D872CD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EF519F721916D44700D872CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF519F741916D44700D872CD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EF519F751916D44700D872CD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EF519F771916D44700D872CD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EF519F7D1916D44700D872CD /* Connect 4Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Connect 4Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF519F7E1916D44700D872CD /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		EF519F861916D44700D872CD /* Connect 4Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Connect 4Tests-Info.plist"; sourceTree = "<group>"; };
+		EF519F881916D44700D872CD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EF519F8A1916D44700D872CD /* Connect_4Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Connect_4Tests.m; sourceTree = "<group>"; };
+		EF519F971916D47B00D872CD /* GameBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameBoard.h; sourceTree = "<group>"; };
+		EF519F981916D47B00D872CD /* GameBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameBoard.m; sourceTree = "<group>"; };
+		EF519F9A1916D48900D872CD /* GamePiece.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamePiece.h; sourceTree = "<group>"; };
+		EF519F9B1916D48900D872CD /* GamePiece.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamePiece.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF519F591916D44700D872CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF519F621916D44700D872CD /* CoreGraphics.framework in Frameworks */,
+				EF519F641916D44700D872CD /* UIKit.framework in Frameworks */,
+				EF519F601916D44700D872CD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF519F7A1916D44700D872CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF519F7F1916D44700D872CD /* XCTest.framework in Frameworks */,
+				EF519F811916D44700D872CD /* UIKit.framework in Frameworks */,
+				EF519F801916D44700D872CD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF519F531916D44700D872CD = {
+			isa = PBXGroup;
+			children = (
+				EF519F651916D44700D872CD /* Connect 4 */,
+				EF519F841916D44700D872CD /* Connect 4Tests */,
+				EF519F5E1916D44700D872CD /* Frameworks */,
+				EF519F5D1916D44700D872CD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF519F5D1916D44700D872CD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF519F5C1916D44700D872CD /* Connect 4.app */,
+				EF519F7D1916D44700D872CD /* Connect 4Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF519F5E1916D44700D872CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EF519F5F1916D44700D872CD /* Foundation.framework */,
+				EF519F611916D44700D872CD /* CoreGraphics.framework */,
+				EF519F631916D44700D872CD /* UIKit.framework */,
+				EF519F7E1916D44700D872CD /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF519F651916D44700D872CD /* Connect 4 */ = {
+			isa = PBXGroup;
+			children = (
+				EF519F961916D45D00D872CD /* Controllers */,
+				EF519F951916D45900D872CD /* Views */,
+				EF519F941916D45400D872CD /* Models */,
+				EF519F661916D44700D872CD /* Supporting Files */,
+			);
+			path = "Connect 4";
+			sourceTree = "<group>";
+		};
+		EF519F661916D44700D872CD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF519F6E1916D44700D872CD /* AppDelegate.h */,
+				EF519F6F1916D44700D872CD /* AppDelegate.m */,
+				EF519F771916D44700D872CD /* Images.xcassets */,
+				EF519F671916D44700D872CD /* Connect 4-Info.plist */,
+				EF519F681916D44700D872CD /* InfoPlist.strings */,
+				EF519F6B1916D44700D872CD /* main.m */,
+				EF519F6D1916D44700D872CD /* Connect 4-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EF519F841916D44700D872CD /* Connect 4Tests */ = {
+			isa = PBXGroup;
+			children = (
+				EF519F8A1916D44700D872CD /* Connect_4Tests.m */,
+				EF519F851916D44700D872CD /* Supporting Files */,
+			);
+			path = "Connect 4Tests";
+			sourceTree = "<group>";
+		};
+		EF519F851916D44700D872CD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF519F861916D44700D872CD /* Connect 4Tests-Info.plist */,
+				EF519F871916D44700D872CD /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EF519F941916D45400D872CD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EF519F971916D47B00D872CD /* GameBoard.h */,
+				EF519F981916D47B00D872CD /* GameBoard.m */,
+				EF519F9A1916D48900D872CD /* GamePiece.h */,
+				EF519F9B1916D48900D872CD /* GamePiece.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		EF519F951916D45900D872CD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EF519F711916D44700D872CD /* Main.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		EF519F961916D45D00D872CD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EF519F741916D44700D872CD /* ViewController.h */,
+				EF519F751916D44700D872CD /* ViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF519F5B1916D44700D872CD /* Connect 4 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF519F8E1916D44700D872CD /* Build configuration list for PBXNativeTarget "Connect 4" */;
+			buildPhases = (
+				EF519F581916D44700D872CD /* Sources */,
+				EF519F591916D44700D872CD /* Frameworks */,
+				EF519F5A1916D44700D872CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Connect 4";
+			productName = "Connect 4";
+			productReference = EF519F5C1916D44700D872CD /* Connect 4.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EF519F7C1916D44700D872CD /* Connect 4Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF519F911916D44700D872CD /* Build configuration list for PBXNativeTarget "Connect 4Tests" */;
+			buildPhases = (
+				EF519F791916D44700D872CD /* Sources */,
+				EF519F7A1916D44700D872CD /* Frameworks */,
+				EF519F7B1916D44700D872CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF519F831916D44700D872CD /* PBXTargetDependency */,
+			);
+			name = "Connect 4Tests";
+			productName = "Connect 4Tests";
+			productReference = EF519F7D1916D44700D872CD /* Connect 4Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF519F541916D44700D872CD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Code Fellows";
+				TargetAttributes = {
+					EF519F7C1916D44700D872CD = {
+						TestTargetID = EF519F5B1916D44700D872CD;
+					};
+				};
+			};
+			buildConfigurationList = EF519F571916D44700D872CD /* Build configuration list for PBXProject "Connect 4" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF519F531916D44700D872CD;
+			productRefGroup = EF519F5D1916D44700D872CD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF519F5B1916D44700D872CD /* Connect 4 */,
+				EF519F7C1916D44700D872CD /* Connect 4Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF519F5A1916D44700D872CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF519F781916D44700D872CD /* Images.xcassets in Resources */,
+				EF519F6A1916D44700D872CD /* InfoPlist.strings in Resources */,
+				EF519F731916D44700D872CD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF519F7B1916D44700D872CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF519F891916D44700D872CD /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF519F581916D44700D872CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF519F9C1916D48900D872CD /* GamePiece.m in Sources */,
+				EF519F991916D47B00D872CD /* GameBoard.m in Sources */,
+				EF519F761916D44700D872CD /* ViewController.m in Sources */,
+				EF519F701916D44700D872CD /* AppDelegate.m in Sources */,
+				EF519F6C1916D44700D872CD /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF519F791916D44700D872CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF519F8B1916D44700D872CD /* Connect_4Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF519F831916D44700D872CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF519F5B1916D44700D872CD /* Connect 4 */;
+			targetProxy = EF519F821916D44700D872CD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EF519F681916D44700D872CD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF519F691916D44700D872CD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EF519F711916D44700D872CD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF519F721916D44700D872CD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EF519F871916D44700D872CD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF519F881916D44700D872CD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF519F8C1916D44700D872CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EF519F8D1916D44700D872CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF519F8F1916D44700D872CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Connect 4/Connect 4-Prefix.pch";
+				INFOPLIST_FILE = "Connect 4/Connect 4-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EF519F901916D44700D872CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Connect 4/Connect 4-Prefix.pch";
+				INFOPLIST_FILE = "Connect 4/Connect 4-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		EF519F921916D44700D872CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Connect 4.app/Connect 4";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Connect 4/Connect 4-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Connect 4Tests/Connect 4Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		EF519F931916D44700D872CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Connect 4.app/Connect 4";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Connect 4/Connect 4-Prefix.pch";
+				INFOPLIST_FILE = "Connect 4Tests/Connect 4Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF519F571916D44700D872CD /* Build configuration list for PBXProject "Connect 4" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF519F8C1916D44700D872CD /* Debug */,
+				EF519F8D1916D44700D872CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF519F8E1916D44700D872CD /* Build configuration list for PBXNativeTarget "Connect 4" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF519F8F1916D44700D872CD /* Debug */,
+				EF519F901916D44700D872CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EF519F911916D44700D872CD /* Build configuration list for PBXNativeTarget "Connect 4Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF519F921916D44700D872CD /* Debug */,
+				EF519F931916D44700D872CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF519F541916D44700D872CD /* Project object */;
+}
