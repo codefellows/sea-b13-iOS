@@ -16,7 +16,7 @@
 + (GamePiece *)blackPiece;
 + (GamePiece *)redPiece;
 
-@property (nonatomic, strong) UIColor *color;
+@property (nonatomic, strong) UIColor *pieceColor;
 @property (nonatomic, weak) Player *player;
 @property (nonatomic, weak) GameBoard *gameBoard;
 

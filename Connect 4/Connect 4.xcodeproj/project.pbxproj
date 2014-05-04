@@ -23,6 +23,7 @@
 		EF519F8B1916D44700D872CD /* Connect_4Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF519F8A1916D44700D872CD /* Connect_4Tests.m */; };
 		EF519F991916D47B00D872CD /* GameBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = EF519F981916D47B00D872CD /* GameBoard.m */; };
 		EF519F9C1916D48900D872CD /* GamePiece.m in Sources */ = {isa = PBXBuildFile; fileRef = EF519F9B1916D48900D872CD /* GamePiece.m */; };
+		EF519F9F1916D73200D872CD /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = EF519F9E1916D73200D872CD /* Player.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,8 @@
 		EF519F981916D47B00D872CD /* GameBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameBoard.m; sourceTree = "<group>"; };
 		EF519F9A1916D48900D872CD /* GamePiece.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamePiece.h; sourceTree = "<group>"; };
 		EF519F9B1916D48900D872CD /* GamePiece.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamePiece.m; sourceTree = "<group>"; };
+		EF519F9D1916D73200D872CD /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		EF519F9E1916D73200D872CD /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +168,8 @@
 				EF519F981916D47B00D872CD /* GameBoard.m */,
 				EF519F9A1916D48900D872CD /* GamePiece.h */,
 				EF519F9B1916D48900D872CD /* GamePiece.m */,
+				EF519F9D1916D73200D872CD /* Player.h */,
+				EF519F9E1916D73200D872CD /* Player.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -287,6 +292,7 @@
 				EF519F991916D47B00D872CD /* GameBoard.m in Sources */,
 				EF519F761916D44700D872CD /* ViewController.m in Sources */,
 				EF519F701916D44700D872CD /* AppDelegate.m in Sources */,
+				EF519F9F1916D73200D872CD /* Player.m in Sources */,
 				EF519F6C1916D44700D872CD /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

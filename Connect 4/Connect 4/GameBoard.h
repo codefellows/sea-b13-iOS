@@ -15,9 +15,10 @@
 @property (nonatomic, strong) NSArray *players;
 @property (nonatomic, strong) NSArray *blackPieces;
 @property (nonatomic, strong) NSArray *redPieces;
+@property (nonatomic, strong) NSArray *pieces;
 
 - (void)playPiece:(GamePiece*)piece atIndexPath:(NSIndexPath *)indexPath;
 
-- (instancetype)initWithPlayers:(NSArray *)players;
+- (instancetype)initWithPlayers;
 
 @end

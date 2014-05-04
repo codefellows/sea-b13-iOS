@@ -9,6 +9,7 @@
 #import <XCTest/XCTest.h>
 #import "GameBoard.h"
 #import "GamePiece.h"
+#import "Player.h"
 
 @interface Connect_4Tests : XCTestCase
 
@@ -32,10 +33,22 @@
 - (void)testColorOfNewPiece
 {
     GamePiece *redPiece = [GamePiece redPiece];
-    XCTAssertEqual(redPiece.color, [UIColor redColor], @"[GamePiece redPiece] should return a red colored piece");
+    XCTAssertEqual(redPiece.pieceColor, [UIColor redColor], @"[GamePiece redPiece] should return a red colored piece");
 
     GamePiece *blackPiece = [GamePiece blackPiece];
-    XCTAssertEqual(blackPiece.color, [UIColor blackColor], @"[GamePiece blackPiece] should return a black colored piece");
+    XCTAssertEqual(blackPiece.pieceColor, [UIColor blackColor], @"[GamePiece blackPiece] should return a black colored piece");
 
 }
+
+- (void)testNewGamePlayerCount
+{
+    GameBoard *gameBoard = [[GameBoard alloc] initWithPlayers];
+
+    XCTAssertTrue(gameBoard.players.count == 2, @"New games should start with two players");
+    
+//    Player *playerOne = [[Player alloc] initWithColor:[UIColor blackColor]];
+//    Player *playerTwo = [[Player alloc] initWithColor:[UIColor redColor]];
+
+}
+
 @end

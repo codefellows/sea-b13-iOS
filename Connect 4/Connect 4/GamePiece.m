@@ -14,7 +14,7 @@
 {
     GamePiece *blackPiece = [GamePiece new];
     
-    blackPiece.color = [UIColor blackColor];
+    blackPiece.pieceColor = [UIColor blackColor];
     
     return blackPiece;
 }
@@ -23,7 +23,7 @@
 {
     GamePiece *redPiece = [GamePiece new];
     
-    redPiece.color = [UIColor redColor];
+    redPiece.pieceColor = [UIColor redColor];
     
     return redPiece;
 }

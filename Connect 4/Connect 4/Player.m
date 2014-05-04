@@ -1,26 +1,22 @@
 //
-//  GameBoard.m
+//  Player.m
 //  Connect 4
 //
 //  Created by John Clem on 5/4/14.
 //  Copyright (c) 2014 Code Fellows. All rights reserved.
 //
 
-#import "GameBoard.h"
+#import "Player.h"
 
-@implementation GameBoard
+@implementation Player
 
-- (instancetype)initWithPlayers
+- (instancetype)initWithColor:(UIColor *)playerColor
 {
     if (self = [super init]) {
         
     }
     
     return self;
-}
-
-- (void)playPiece:(GamePiece *)piece atIndexPath:(NSIndexPath *)indexPath
-{
     
 }
 
