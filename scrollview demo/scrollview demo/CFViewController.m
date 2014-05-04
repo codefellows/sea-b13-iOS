@@ -14,7 +14,7 @@
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 
 @property (strong,nonatomic) Person *firstPerson;
-@property (copy,nonatomic) Person *secondPerson;
+@property (strong,nonatomic) Person *secondPerson;
 
 @end
 
