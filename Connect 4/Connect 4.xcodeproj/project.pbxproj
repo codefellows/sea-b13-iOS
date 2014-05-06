@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20F069E568AE424F948F2F20 /* libPods-Connect 4Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FCC08EAD8BC6408B97454C9F /* libPods-Connect 4Tests.a */; };
 		EF519F601916D44700D872CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF519F5F1916D44700D872CD /* Foundation.framework */; };
 		EF519F621916D44700D872CD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF519F611916D44700D872CD /* CoreGraphics.framework */; };
 		EF519F641916D44700D872CD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF519F631916D44700D872CD /* UIKit.framework */; };
@@ -24,6 +25,7 @@
 		EF519F991916D47B00D872CD /* GameBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = EF519F981916D47B00D872CD /* GameBoard.m */; };
 		EF519F9C1916D48900D872CD /* GamePiece.m in Sources */ = {isa = PBXBuildFile; fileRef = EF519F9B1916D48900D872CD /* GamePiece.m */; };
 		EF519F9F1916D73200D872CD /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = EF519F9E1916D73200D872CD /* Player.m */; };
+		EFC4E941191865A300F82E9A /* MenuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC4E940191865A300F82E9A /* MenuTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8B2F1F72A8AA44D5BA655C11 /* Pods-Connect 4Tests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Connect 4Tests.xcconfig"; path = "Pods/Pods-Connect 4Tests.xcconfig"; sourceTree = "<group>"; };
 		EF519F5C1916D44700D872CD /* Connect 4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Connect 4.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF519F5F1916D44700D872CD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EF519F611916D44700D872CD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -62,6 +65,9 @@
 		EF519F9B1916D48900D872CD /* GamePiece.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamePiece.m; sourceTree = "<group>"; };
 		EF519F9D1916D73200D872CD /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
 		EF519F9E1916D73200D872CD /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
+		EFC4E93F191865A300F82E9A /* MenuTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuTests.h; sourceTree = "<group>"; };
+		EFC4E940191865A300F82E9A /* MenuTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuTests.m; sourceTree = "<group>"; };
+		FCC08EAD8BC6408B97454C9F /* libPods-Connect 4Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Connect 4Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +88,7 @@
 				EF519F7F1916D44700D872CD /* XCTest.framework in Frameworks */,
 				EF519F811916D44700D872CD /* UIKit.framework in Frameworks */,
 				EF519F801916D44700D872CD /* Foundation.framework in Frameworks */,
+				20F069E568AE424F948F2F20 /* libPods-Connect 4Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +102,7 @@
 				EF519F841916D44700D872CD /* Connect 4Tests */,
 				EF519F5E1916D44700D872CD /* Frameworks */,
 				EF519F5D1916D44700D872CD /* Products */,
+				8B2F1F72A8AA44D5BA655C11 /* Pods-Connect 4Tests.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -114,6 +122,7 @@
 				EF519F611916D44700D872CD /* CoreGraphics.framework */,
 				EF519F631916D44700D872CD /* UIKit.framework */,
 				EF519F7E1916D44700D872CD /* XCTest.framework */,
+				FCC08EAD8BC6408B97454C9F /* libPods-Connect 4Tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -148,6 +157,8 @@
 			children = (
 				EF519F8A1916D44700D872CD /* Connect_4Tests.m */,
 				EF519F851916D44700D872CD /* Supporting Files */,
+				EFC4E93F191865A300F82E9A /* MenuTests.h */,
+				EFC4E940191865A300F82E9A /* MenuTests.m */,
 			);
 			path = "Connect 4Tests";
 			sourceTree = "<group>";
@@ -215,9 +226,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EF519F911916D44700D872CD /* Build configuration list for PBXNativeTarget "Connect 4Tests" */;
 			buildPhases = (
+				D7362EC799E24974908E2AFE /* Check Pods Manifest.lock */,
 				EF519F791916D44700D872CD /* Sources */,
 				EF519F7A1916D44700D872CD /* Frameworks */,
 				EF519F7B1916D44700D872CD /* Resources */,
+				BB56ECD759E24FE099E415AF /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -283,6 +296,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		BB56ECD759E24FE099E415AF /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-Connect 4Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7362EC799E24974908E2AFE /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EF519F581916D44700D872CD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -301,6 +347,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFC4E941191865A300F82E9A /* MenuTests.m in Sources */,
 				EF519F8B1916D44700D872CD /* Connect_4Tests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -441,6 +488,7 @@
 		};
 		EF519F921916D44700D872CD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B2F1F72A8AA44D5BA655C11 /* Pods-Connect 4Tests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Connect 4.app/Connect 4";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -463,6 +511,7 @@
 		};
 		EF519F931916D44700D872CD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B2F1F72A8AA44D5BA655C11 /* Pods-Connect 4Tests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Connect 4.app/Connect 4";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -498,6 +547,7 @@
 				EF519F901916D44700D872CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EF519F911916D44700D872CD /* Build configuration list for PBXNativeTarget "Connect 4Tests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +556,7 @@
 				EF519F931916D44700D872CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -9,7 +9,10 @@
 #import "ViewController.h"
 
 @interface ViewController ()
-
+@property (weak, nonatomic) IBOutlet UIStepper *playerCountStepper;
+@property (weak, nonatomic) IBOutlet UILabel *playerCountLabel;
+@property (weak, nonatomic) IBOutlet UIButton *startButton;
+@property (nonatomic) NSInteger playerCount;
 @end
 
 @implementation ViewController
@@ -17,13 +20,21 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    [_playerCountStepper setAccessibilityLabel:@"Player Count Stepper"];
 }
 
-- (void)didReceiveMemoryWarning
+- (IBAction)changePlayerCount:(UIStepper *)sender
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    _playerCount = sender.value;
+    _playerCountLabel.text = [NSString stringWithFormat:@"%d", _playerCount];
+    [_startButton setEnabled:_playerCount];
 }
 
+- (IBAction)startGame:(id)sender
+{
+    if (_playerCount) {
+        NSLog(@"Starting Game");
+    }
+}
 @end
