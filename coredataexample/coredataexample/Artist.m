@@ -13,8 +13,8 @@
 @implementation Artist
 
 @dynamic firstName;
-@dynamic lastName;
 @dynamic genre;
+@dynamic lastName;
 @dynamic label;
 
 @end

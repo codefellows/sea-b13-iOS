@@ -22,6 +22,7 @@
             
             
             self.objectContext = self.managedDocument.managedObjectContext;
+
             
             completion(self.objectContext);
         }];

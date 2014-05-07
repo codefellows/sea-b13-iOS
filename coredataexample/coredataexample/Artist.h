@@ -14,8 +14,8 @@
 @interface Artist : NSManagedObject
 
 @property (nonatomic, retain) NSString * firstName;
-@property (nonatomic, retain) NSString * lastName;
 @property (nonatomic, retain) NSString * genre;
+@property (nonatomic, retain) NSString * lastName;
 @property (nonatomic, retain) Label *label;
 
 @end

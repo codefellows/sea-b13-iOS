@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		A23D6BD4191A9B8900934904 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A23D6BD2191A9B8900934904 /* Model.xcdatamodeld */; };
-		A23D6BDA191A9DD900934904 /* Artist.m in Sources */ = {isa = PBXBuildFile; fileRef = A23D6BD9191A9DD900934904 /* Artist.m */; };
-		A23D6BDD191A9F3500934904 /* Label.m in Sources */ = {isa = PBXBuildFile; fileRef = A23D6BDC191A9F3500934904 /* Label.m */; };
+		A2679A65191AA77900CBD58C /* Label.m in Sources */ = {isa = PBXBuildFile; fileRef = A2679A64191AA77900CBD58C /* Label.m */; };
+		A2679A68191AA77A00CBD58C /* Artist.m in Sources */ = {isa = PBXBuildFile; fileRef = A2679A67191AA77A00CBD58C /* Artist.m */; };
+		A2679A6B191AADB400CBD58C /* CFArtistsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2679A6A191AADB400CBD58C /* CFArtistsViewController.m */; };
 		A2E3E707191A95F900D74C5C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2E3E706191A95F900D74C5C /* Foundation.framework */; };
 		A2E3E709191A95F900D74C5C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2E3E708191A95F900D74C5C /* CoreGraphics.framework */; };
 		A2E3E70B191A95F900D74C5C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2E3E70A191A95F900D74C5C /* UIKit.framework */; };
@@ -39,10 +40,12 @@
 
 /* Begin PBXFileReference section */
 		A23D6BD3191A9B8900934904 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
-		A23D6BD8191A9DD900934904 /* Artist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Artist.h; sourceTree = "<group>"; };
-		A23D6BD9191A9DD900934904 /* Artist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Artist.m; sourceTree = "<group>"; };
-		A23D6BDB191A9F3500934904 /* Label.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Label.h; sourceTree = "<group>"; };
-		A23D6BDC191A9F3500934904 /* Label.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Label.m; sourceTree = "<group>"; };
+		A2679A63191AA77900CBD58C /* Label.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Label.h; sourceTree = "<group>"; };
+		A2679A64191AA77900CBD58C /* Label.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Label.m; sourceTree = "<group>"; };
+		A2679A66191AA77A00CBD58C /* Artist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Artist.h; sourceTree = "<group>"; };
+		A2679A67191AA77A00CBD58C /* Artist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Artist.m; sourceTree = "<group>"; };
+		A2679A69191AADB400CBD58C /* CFArtistsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFArtistsViewController.h; sourceTree = "<group>"; };
+		A2679A6A191AADB400CBD58C /* CFArtistsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFArtistsViewController.m; sourceTree = "<group>"; };
 		A2E3E703191A95F900D74C5C /* coredataexample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = coredataexample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2E3E706191A95F900D74C5C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A2E3E708191A95F900D74C5C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -126,13 +129,15 @@
 				A2E3E715191A95F900D74C5C /* CFAppDelegate.h */,
 				A2E3E716191A95F900D74C5C /* CFAppDelegate.m */,
 				A2E3E718191A95F900D74C5C /* Main.storyboard */,
+				A2679A69191AADB400CBD58C /* CFArtistsViewController.h */,
+				A2679A6A191AADB400CBD58C /* CFArtistsViewController.m */,
 				A2E3E73B191A961800D74C5C /* CFAppDelegate+CoreDataContext.h */,
 				A2E3E73C191A961800D74C5C /* CFAppDelegate+CoreDataContext.m */,
 				A23D6BD2191A9B8900934904 /* Model.xcdatamodeld */,
-				A23D6BD8191A9DD900934904 /* Artist.h */,
-				A23D6BD9191A9DD900934904 /* Artist.m */,
-				A23D6BDB191A9F3500934904 /* Label.h */,
-				A23D6BDC191A9F3500934904 /* Label.m */,
+				A2679A66191AA77A00CBD58C /* Artist.h */,
+				A2679A67191AA77A00CBD58C /* Artist.m */,
+				A2679A63191AA77900CBD58C /* Label.h */,
+				A2679A64191AA77900CBD58C /* Label.m */,
 				A2E3E71B191A95F900D74C5C /* CFViewController.h */,
 				A2E3E71C191A95F900D74C5C /* CFViewController.m */,
 				A2E3E71E191A95F900D74C5C /* Images.xcassets */,
@@ -271,10 +276,11 @@
 				A2E3E713191A95F900D74C5C /* main.m in Sources */,
 				A2E3E717191A95F900D74C5C /* CFAppDelegate.m in Sources */,
 				A23D6BD4191A9B8900934904 /* Model.xcdatamodeld in Sources */,
-				A23D6BDD191A9F3500934904 /* Label.m in Sources */,
+				A2679A65191AA77900CBD58C /* Label.m in Sources */,
 				A2E3E73D191A961800D74C5C /* CFAppDelegate+CoreDataContext.m in Sources */,
 				A2E3E71D191A95F900D74C5C /* CFViewController.m in Sources */,
-				A23D6BDA191A9DD900934904 /* Artist.m in Sources */,
+				A2679A6B191AADB400CBD58C /* CFArtistsViewController.m in Sources */,
+				A2679A68191AA77A00CBD58C /* Artist.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
