@@ -16,6 +16,8 @@
     [tester tapViewWithAccessibilityLabel:@"Player Count Stepper"];
     [tester tapViewWithAccessibilityLabel:@"Player Count Stepper"];
     
+    [tester enterText:@"Taylor Potter" intoViewWithAccessibilityLabel:@"Player One Text Field"];
+    [tester enterText:@"Reed Sweeney" intoViewWithAccessibilityLabel:@"Player Two Text Field"];
     [tester tapViewWithAccessibilityLabel:@"Start"];
 
 }
