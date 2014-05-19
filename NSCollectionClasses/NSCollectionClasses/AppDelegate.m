@@ -14,11 +14,13 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
-    [self step1];
+//    [self step1];
     
-    [self step2];
+//    [self step2];
 
-    [self step3];
+//    [self step3];
+    
+    [self step4];
     
     self.window.rootViewController = [UIViewController new];
     self.window.rootViewController.view.backgroundColor = [UIColor whiteColor];
@@ -36,7 +38,8 @@
     
     [hashTable addObject:johnClem];
     [hashTable addObject:bradJohnson];
-    [hashTable addObject:@"Brad Johnson"];
+    [hashTable addObject:bradJohnson];
+//    [hashTable addObject:@"Brad Johnson"];
     
     NSLog(@"Step 1-1: %@", hashTable);
     
@@ -71,7 +74,7 @@
 {
     NSHashTable *hashTable = [NSHashTable hashTableWithOptions:NSPointerFunctionsWeakMemory];
     
-    NSMutableString *johnClem = [[NSMutableString alloc] initWithFormat:@"John Clem"];
+    NSString *johnClem = [[NSString alloc] initWithFormat:@"John Clem"];
     NSString *bradJohnson = @"Brad Johnson";
     
     [hashTable addObject:johnClem];
@@ -83,6 +86,27 @@
     johnClem = nil;
     
     NSLog(@"Step 3-2: %@", hashTable);
+}
+
+- (void)step4
+{
+    NSMutableArray *mutableArray = [[NSMutableArray alloc] init];
+    
+    NSString *johnClem = [[NSString alloc] initWithFormat:@"John Clem"];
+    NSMutableString *bradJohnson = [@"Brad Johnson" mutableCopy];
+    
+    [mutableArray addObject:johnClem];
+    [mutableArray addObject:bradJohnson];
+    
+    NSLog(@"Step 4-1: %@", mutableArray);
+    
+    [bradJohnson appendString:@" is a teacher"];
+    
+    NSLog(@"Step 4-2: %@", mutableArray);
+    bradJohnson = nil;
+    johnClem = nil;
+    
+    NSLog(@"Step 4-3: %@", mutableArray);
 }
 
 @end
