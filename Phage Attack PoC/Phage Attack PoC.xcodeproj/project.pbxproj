@@ -1,0 +1,489 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF6F007719252E0C00E650CF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF6F007619252E0C00E650CF /* Foundation.framework */; };
+		EF6F007919252E0C00E650CF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF6F007819252E0C00E650CF /* CoreGraphics.framework */; };
+		EF6F007B19252E0C00E650CF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF6F007A19252E0C00E650CF /* UIKit.framework */; };
+		EF6F007D19252E0C00E650CF /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF6F007C19252E0C00E650CF /* SpriteKit.framework */; };
+		EF6F008319252E0C00E650CF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EF6F008119252E0C00E650CF /* InfoPlist.strings */; };
+		EF6F008519252E0C00E650CF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EF6F008419252E0C00E650CF /* main.m */; };
+		EF6F008919252E0C00E650CF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF6F008819252E0C00E650CF /* AppDelegate.m */; };
+		EF6F008C19252E0C00E650CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF6F008A19252E0C00E650CF /* Main.storyboard */; };
+		EF6F008F19252E0C00E650CF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF6F008E19252E0C00E650CF /* ViewController.m */; };
+		EF6F009219252E0C00E650CF /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = EF6F009119252E0C00E650CF /* MyScene.m */; };
+		EF6F009419252E0C00E650CF /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = EF6F009319252E0C00E650CF /* Spaceship.png */; };
+		EF6F009619252E0C00E650CF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF6F009519252E0C00E650CF /* Images.xcassets */; };
+		EF6F009D19252E0C00E650CF /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF6F009C19252E0C00E650CF /* XCTest.framework */; };
+		EF6F009E19252E0C00E650CF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF6F007619252E0C00E650CF /* Foundation.framework */; };
+		EF6F009F19252E0C00E650CF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF6F007A19252E0C00E650CF /* UIKit.framework */; };
+		EF6F00A719252E0C00E650CF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EF6F00A519252E0C00E650CF /* InfoPlist.strings */; };
+		EF6F00A919252E0C00E650CF /* Phage_Attack_PoCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF6F00A819252E0C00E650CF /* Phage_Attack_PoCTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF6F00A019252E0C00E650CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF6F006B19252E0C00E650CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF6F007219252E0C00E650CF;
+			remoteInfo = "Phage Attack PoC";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EF6F007319252E0C00E650CF /* Phage Attack PoC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Phage Attack PoC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF6F007619252E0C00E650CF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EF6F007819252E0C00E650CF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EF6F007A19252E0C00E650CF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EF6F007C19252E0C00E650CF /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		EF6F008019252E0C00E650CF /* Phage Attack PoC-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Phage Attack PoC-Info.plist"; sourceTree = "<group>"; };
+		EF6F008219252E0C00E650CF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EF6F008419252E0C00E650CF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EF6F008619252E0C00E650CF /* Phage Attack PoC-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Phage Attack PoC-Prefix.pch"; sourceTree = "<group>"; };
+		EF6F008719252E0C00E650CF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EF6F008819252E0C00E650CF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EF6F008B19252E0C00E650CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF6F008D19252E0C00E650CF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EF6F008E19252E0C00E650CF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EF6F009019252E0C00E650CF /* MyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyScene.h; sourceTree = "<group>"; };
+		EF6F009119252E0C00E650CF /* MyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyScene.m; sourceTree = "<group>"; };
+		EF6F009319252E0C00E650CF /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
+		EF6F009519252E0C00E650CF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EF6F009B19252E0C00E650CF /* Phage Attack PoCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Phage Attack PoCTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF6F009C19252E0C00E650CF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		EF6F00A419252E0C00E650CF /* Phage Attack PoCTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Phage Attack PoCTests-Info.plist"; sourceTree = "<group>"; };
+		EF6F00A619252E0C00E650CF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EF6F00A819252E0C00E650CF /* Phage_Attack_PoCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Phage_Attack_PoCTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF6F007019252E0C00E650CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF6F007919252E0C00E650CF /* CoreGraphics.framework in Frameworks */,
+				EF6F007B19252E0C00E650CF /* UIKit.framework in Frameworks */,
+				EF6F007D19252E0C00E650CF /* SpriteKit.framework in Frameworks */,
+				EF6F007719252E0C00E650CF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF6F009819252E0C00E650CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF6F009D19252E0C00E650CF /* XCTest.framework in Frameworks */,
+				EF6F009F19252E0C00E650CF /* UIKit.framework in Frameworks */,
+				EF6F009E19252E0C00E650CF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF6F006A19252E0C00E650CF = {
+			isa = PBXGroup;
+			children = (
+				EF6F007E19252E0C00E650CF /* Phage Attack PoC */,
+				EF6F00A219252E0C00E650CF /* Phage Attack PoCTests */,
+				EF6F007519252E0C00E650CF /* Frameworks */,
+				EF6F007419252E0C00E650CF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF6F007419252E0C00E650CF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF6F007319252E0C00E650CF /* Phage Attack PoC.app */,
+				EF6F009B19252E0C00E650CF /* Phage Attack PoCTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF6F007519252E0C00E650CF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EF6F007619252E0C00E650CF /* Foundation.framework */,
+				EF6F007819252E0C00E650CF /* CoreGraphics.framework */,
+				EF6F007A19252E0C00E650CF /* UIKit.framework */,
+				EF6F007C19252E0C00E650CF /* SpriteKit.framework */,
+				EF6F009C19252E0C00E650CF /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF6F007E19252E0C00E650CF /* Phage Attack PoC */ = {
+			isa = PBXGroup;
+			children = (
+				EF6F008719252E0C00E650CF /* AppDelegate.h */,
+				EF6F008819252E0C00E650CF /* AppDelegate.m */,
+				EF6F008A19252E0C00E650CF /* Main.storyboard */,
+				EF6F008D19252E0C00E650CF /* ViewController.h */,
+				EF6F008E19252E0C00E650CF /* ViewController.m */,
+				EF6F009019252E0C00E650CF /* MyScene.h */,
+				EF6F009119252E0C00E650CF /* MyScene.m */,
+				EF6F009319252E0C00E650CF /* Spaceship.png */,
+				EF6F009519252E0C00E650CF /* Images.xcassets */,
+				EF6F007F19252E0C00E650CF /* Supporting Files */,
+			);
+			path = "Phage Attack PoC";
+			sourceTree = "<group>";
+		};
+		EF6F007F19252E0C00E650CF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF6F008019252E0C00E650CF /* Phage Attack PoC-Info.plist */,
+				EF6F008119252E0C00E650CF /* InfoPlist.strings */,
+				EF6F008419252E0C00E650CF /* main.m */,
+				EF6F008619252E0C00E650CF /* Phage Attack PoC-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EF6F00A219252E0C00E650CF /* Phage Attack PoCTests */ = {
+			isa = PBXGroup;
+			children = (
+				EF6F00A819252E0C00E650CF /* Phage_Attack_PoCTests.m */,
+				EF6F00A319252E0C00E650CF /* Supporting Files */,
+			);
+			path = "Phage Attack PoCTests";
+			sourceTree = "<group>";
+		};
+		EF6F00A319252E0C00E650CF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF6F00A419252E0C00E650CF /* Phage Attack PoCTests-Info.plist */,
+				EF6F00A519252E0C00E650CF /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF6F007219252E0C00E650CF /* Phage Attack PoC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF6F00AC19252E0C00E650CF /* Build configuration list for PBXNativeTarget "Phage Attack PoC" */;
+			buildPhases = (
+				EF6F006F19252E0C00E650CF /* Sources */,
+				EF6F007019252E0C00E650CF /* Frameworks */,
+				EF6F007119252E0C00E650CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Phage Attack PoC";
+			productName = "Phage Attack PoC";
+			productReference = EF6F007319252E0C00E650CF /* Phage Attack PoC.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EF6F009A19252E0C00E650CF /* Phage Attack PoCTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF6F00AF19252E0C00E650CF /* Build configuration list for PBXNativeTarget "Phage Attack PoCTests" */;
+			buildPhases = (
+				EF6F009719252E0C00E650CF /* Sources */,
+				EF6F009819252E0C00E650CF /* Frameworks */,
+				EF6F009919252E0C00E650CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF6F00A119252E0C00E650CF /* PBXTargetDependency */,
+			);
+			name = "Phage Attack PoCTests";
+			productName = "Phage Attack PoCTests";
+			productReference = EF6F009B19252E0C00E650CF /* Phage Attack PoCTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF6F006B19252E0C00E650CF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Code Fellows";
+				TargetAttributes = {
+					EF6F009A19252E0C00E650CF = {
+						TestTargetID = EF6F007219252E0C00E650CF;
+					};
+				};
+			};
+			buildConfigurationList = EF6F006E19252E0C00E650CF /* Build configuration list for PBXProject "Phage Attack PoC" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF6F006A19252E0C00E650CF;
+			productRefGroup = EF6F007419252E0C00E650CF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF6F007219252E0C00E650CF /* Phage Attack PoC */,
+				EF6F009A19252E0C00E650CF /* Phage Attack PoCTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF6F007119252E0C00E650CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF6F008319252E0C00E650CF /* InfoPlist.strings in Resources */,
+				EF6F009619252E0C00E650CF /* Images.xcassets in Resources */,
+				EF6F009419252E0C00E650CF /* Spaceship.png in Resources */,
+				EF6F008C19252E0C00E650CF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF6F009919252E0C00E650CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF6F00A719252E0C00E650CF /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF6F006F19252E0C00E650CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF6F009219252E0C00E650CF /* MyScene.m in Sources */,
+				EF6F008F19252E0C00E650CF /* ViewController.m in Sources */,
+				EF6F008919252E0C00E650CF /* AppDelegate.m in Sources */,
+				EF6F008519252E0C00E650CF /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF6F009719252E0C00E650CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF6F00A919252E0C00E650CF /* Phage_Attack_PoCTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF6F00A119252E0C00E650CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF6F007219252E0C00E650CF /* Phage Attack PoC */;
+			targetProxy = EF6F00A019252E0C00E650CF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EF6F008119252E0C00E650CF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF6F008219252E0C00E650CF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EF6F008A19252E0C00E650CF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF6F008B19252E0C00E650CF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EF6F00A519252E0C00E650CF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF6F00A619252E0C00E650CF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF6F00AA19252E0C00E650CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		EF6F00AB19252E0C00E650CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF6F00AD19252E0C00E650CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Phage Attack PoC/Phage Attack PoC-Prefix.pch";
+				INFOPLIST_FILE = "Phage Attack PoC/Phage Attack PoC-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EF6F00AE19252E0C00E650CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Phage Attack PoC/Phage Attack PoC-Prefix.pch";
+				INFOPLIST_FILE = "Phage Attack PoC/Phage Attack PoC-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		EF6F00B019252E0C00E650CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Phage Attack PoC.app/Phage Attack PoC";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Phage Attack PoC/Phage Attack PoC-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Phage Attack PoCTests/Phage Attack PoCTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		EF6F00B119252E0C00E650CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Phage Attack PoC.app/Phage Attack PoC";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Phage Attack PoC/Phage Attack PoC-Prefix.pch";
+				INFOPLIST_FILE = "Phage Attack PoCTests/Phage Attack PoCTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF6F006E19252E0C00E650CF /* Build configuration list for PBXProject "Phage Attack PoC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF6F00AA19252E0C00E650CF /* Debug */,
+				EF6F00AB19252E0C00E650CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF6F00AC19252E0C00E650CF /* Build configuration list for PBXNativeTarget "Phage Attack PoC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF6F00AD19252E0C00E650CF /* Debug */,
+				EF6F00AE19252E0C00E650CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EF6F00AF19252E0C00E650CF /* Build configuration list for PBXNativeTarget "Phage Attack PoCTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF6F00B019252E0C00E650CF /* Debug */,
+				EF6F00B119252E0C00E650CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF6F006B19252E0C00E650CF /* Project object */;
+}

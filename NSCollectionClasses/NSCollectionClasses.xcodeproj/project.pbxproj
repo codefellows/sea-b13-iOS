@@ -1,0 +1,452 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF756CB7192A6B5D00F0FE97 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF756CB6192A6B5D00F0FE97 /* Foundation.framework */; };
+		EF756CB9192A6B5D00F0FE97 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF756CB8192A6B5D00F0FE97 /* CoreGraphics.framework */; };
+		EF756CBB192A6B5D00F0FE97 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF756CBA192A6B5D00F0FE97 /* UIKit.framework */; };
+		EF756CC1192A6B5D00F0FE97 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EF756CBF192A6B5D00F0FE97 /* InfoPlist.strings */; };
+		EF756CC3192A6B5D00F0FE97 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EF756CC2192A6B5D00F0FE97 /* main.m */; };
+		EF756CC7192A6B5D00F0FE97 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF756CC6192A6B5D00F0FE97 /* AppDelegate.m */; };
+		EF756CC9192A6B5D00F0FE97 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF756CC8192A6B5D00F0FE97 /* Images.xcassets */; };
+		EF756CD0192A6B5D00F0FE97 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF756CCF192A6B5D00F0FE97 /* XCTest.framework */; };
+		EF756CD1192A6B5D00F0FE97 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF756CB6192A6B5D00F0FE97 /* Foundation.framework */; };
+		EF756CD2192A6B5D00F0FE97 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF756CBA192A6B5D00F0FE97 /* UIKit.framework */; };
+		EF756CDA192A6B5D00F0FE97 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EF756CD8192A6B5D00F0FE97 /* InfoPlist.strings */; };
+		EF756CDC192A6B5D00F0FE97 /* NSCollectionClassesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF756CDB192A6B5D00F0FE97 /* NSCollectionClassesTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF756CD3192A6B5D00F0FE97 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF756CAB192A6B5D00F0FE97 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF756CB2192A6B5D00F0FE97;
+			remoteInfo = NSCollectionClasses;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EF756CB3192A6B5D00F0FE97 /* NSCollectionClasses.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSCollectionClasses.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF756CB6192A6B5D00F0FE97 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EF756CB8192A6B5D00F0FE97 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EF756CBA192A6B5D00F0FE97 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EF756CBE192A6B5D00F0FE97 /* NSCollectionClasses-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NSCollectionClasses-Info.plist"; sourceTree = "<group>"; };
+		EF756CC0192A6B5D00F0FE97 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EF756CC2192A6B5D00F0FE97 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EF756CC4192A6B5D00F0FE97 /* NSCollectionClasses-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSCollectionClasses-Prefix.pch"; sourceTree = "<group>"; };
+		EF756CC5192A6B5D00F0FE97 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EF756CC6192A6B5D00F0FE97 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EF756CC8192A6B5D00F0FE97 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EF756CCE192A6B5D00F0FE97 /* NSCollectionClassesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NSCollectionClassesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF756CCF192A6B5D00F0FE97 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		EF756CD7192A6B5D00F0FE97 /* NSCollectionClassesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NSCollectionClassesTests-Info.plist"; sourceTree = "<group>"; };
+		EF756CD9192A6B5D00F0FE97 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EF756CDB192A6B5D00F0FE97 /* NSCollectionClassesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSCollectionClassesTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF756CB0192A6B5D00F0FE97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF756CB9192A6B5D00F0FE97 /* CoreGraphics.framework in Frameworks */,
+				EF756CBB192A6B5D00F0FE97 /* UIKit.framework in Frameworks */,
+				EF756CB7192A6B5D00F0FE97 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF756CCB192A6B5D00F0FE97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF756CD0192A6B5D00F0FE97 /* XCTest.framework in Frameworks */,
+				EF756CD2192A6B5D00F0FE97 /* UIKit.framework in Frameworks */,
+				EF756CD1192A6B5D00F0FE97 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF756CAA192A6B5D00F0FE97 = {
+			isa = PBXGroup;
+			children = (
+				EF756CBC192A6B5D00F0FE97 /* NSCollectionClasses */,
+				EF756CD5192A6B5D00F0FE97 /* NSCollectionClassesTests */,
+				EF756CB5192A6B5D00F0FE97 /* Frameworks */,
+				EF756CB4192A6B5D00F0FE97 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF756CB4192A6B5D00F0FE97 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF756CB3192A6B5D00F0FE97 /* NSCollectionClasses.app */,
+				EF756CCE192A6B5D00F0FE97 /* NSCollectionClassesTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF756CB5192A6B5D00F0FE97 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EF756CB6192A6B5D00F0FE97 /* Foundation.framework */,
+				EF756CB8192A6B5D00F0FE97 /* CoreGraphics.framework */,
+				EF756CBA192A6B5D00F0FE97 /* UIKit.framework */,
+				EF756CCF192A6B5D00F0FE97 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF756CBC192A6B5D00F0FE97 /* NSCollectionClasses */ = {
+			isa = PBXGroup;
+			children = (
+				EF756CC5192A6B5D00F0FE97 /* AppDelegate.h */,
+				EF756CC6192A6B5D00F0FE97 /* AppDelegate.m */,
+				EF756CC8192A6B5D00F0FE97 /* Images.xcassets */,
+				EF756CBD192A6B5D00F0FE97 /* Supporting Files */,
+			);
+			path = NSCollectionClasses;
+			sourceTree = "<group>";
+		};
+		EF756CBD192A6B5D00F0FE97 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF756CBE192A6B5D00F0FE97 /* NSCollectionClasses-Info.plist */,
+				EF756CBF192A6B5D00F0FE97 /* InfoPlist.strings */,
+				EF756CC2192A6B5D00F0FE97 /* main.m */,
+				EF756CC4192A6B5D00F0FE97 /* NSCollectionClasses-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EF756CD5192A6B5D00F0FE97 /* NSCollectionClassesTests */ = {
+			isa = PBXGroup;
+			children = (
+				EF756CDB192A6B5D00F0FE97 /* NSCollectionClassesTests.m */,
+				EF756CD6192A6B5D00F0FE97 /* Supporting Files */,
+			);
+			path = NSCollectionClassesTests;
+			sourceTree = "<group>";
+		};
+		EF756CD6192A6B5D00F0FE97 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF756CD7192A6B5D00F0FE97 /* NSCollectionClassesTests-Info.plist */,
+				EF756CD8192A6B5D00F0FE97 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF756CB2192A6B5D00F0FE97 /* NSCollectionClasses */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF756CDF192A6B5D00F0FE97 /* Build configuration list for PBXNativeTarget "NSCollectionClasses" */;
+			buildPhases = (
+				EF756CAF192A6B5D00F0FE97 /* Sources */,
+				EF756CB0192A6B5D00F0FE97 /* Frameworks */,
+				EF756CB1192A6B5D00F0FE97 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NSCollectionClasses;
+			productName = NSCollectionClasses;
+			productReference = EF756CB3192A6B5D00F0FE97 /* NSCollectionClasses.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EF756CCD192A6B5D00F0FE97 /* NSCollectionClassesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF756CE2192A6B5D00F0FE97 /* Build configuration list for PBXNativeTarget "NSCollectionClassesTests" */;
+			buildPhases = (
+				EF756CCA192A6B5D00F0FE97 /* Sources */,
+				EF756CCB192A6B5D00F0FE97 /* Frameworks */,
+				EF756CCC192A6B5D00F0FE97 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF756CD4192A6B5D00F0FE97 /* PBXTargetDependency */,
+			);
+			name = NSCollectionClassesTests;
+			productName = NSCollectionClassesTests;
+			productReference = EF756CCE192A6B5D00F0FE97 /* NSCollectionClassesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF756CAB192A6B5D00F0FE97 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Code Fellows";
+				TargetAttributes = {
+					EF756CCD192A6B5D00F0FE97 = {
+						TestTargetID = EF756CB2192A6B5D00F0FE97;
+					};
+				};
+			};
+			buildConfigurationList = EF756CAE192A6B5D00F0FE97 /* Build configuration list for PBXProject "NSCollectionClasses" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EF756CAA192A6B5D00F0FE97;
+			productRefGroup = EF756CB4192A6B5D00F0FE97 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF756CB2192A6B5D00F0FE97 /* NSCollectionClasses */,
+				EF756CCD192A6B5D00F0FE97 /* NSCollectionClassesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF756CB1192A6B5D00F0FE97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF756CC1192A6B5D00F0FE97 /* InfoPlist.strings in Resources */,
+				EF756CC9192A6B5D00F0FE97 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF756CCC192A6B5D00F0FE97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF756CDA192A6B5D00F0FE97 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF756CAF192A6B5D00F0FE97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF756CC7192A6B5D00F0FE97 /* AppDelegate.m in Sources */,
+				EF756CC3192A6B5D00F0FE97 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF756CCA192A6B5D00F0FE97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF756CDC192A6B5D00F0FE97 /* NSCollectionClassesTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF756CD4192A6B5D00F0FE97 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF756CB2192A6B5D00F0FE97 /* NSCollectionClasses */;
+			targetProxy = EF756CD3192A6B5D00F0FE97 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EF756CBF192A6B5D00F0FE97 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF756CC0192A6B5D00F0FE97 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EF756CD8192A6B5D00F0FE97 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF756CD9192A6B5D00F0FE97 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF756CDD192A6B5D00F0FE97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EF756CDE192A6B5D00F0FE97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF756CE0192A6B5D00F0FE97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NSCollectionClasses/NSCollectionClasses-Prefix.pch";
+				INFOPLIST_FILE = "NSCollectionClasses/NSCollectionClasses-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EF756CE1192A6B5D00F0FE97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NSCollectionClasses/NSCollectionClasses-Prefix.pch";
+				INFOPLIST_FILE = "NSCollectionClasses/NSCollectionClasses-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		EF756CE3192A6B5D00F0FE97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NSCollectionClasses.app/NSCollectionClasses";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NSCollectionClasses/NSCollectionClasses-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "NSCollectionClassesTests/NSCollectionClassesTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		EF756CE4192A6B5D00F0FE97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NSCollectionClasses.app/NSCollectionClasses";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NSCollectionClasses/NSCollectionClasses-Prefix.pch";
+				INFOPLIST_FILE = "NSCollectionClassesTests/NSCollectionClassesTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF756CAE192A6B5D00F0FE97 /* Build configuration list for PBXProject "NSCollectionClasses" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF756CDD192A6B5D00F0FE97 /* Debug */,
+				EF756CDE192A6B5D00F0FE97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF756CDF192A6B5D00F0FE97 /* Build configuration list for PBXNativeTarget "NSCollectionClasses" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF756CE0192A6B5D00F0FE97 /* Debug */,
+				EF756CE1192A6B5D00F0FE97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EF756CE2192A6B5D00F0FE97 /* Build configuration list for PBXNativeTarget "NSCollectionClassesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF756CE3192A6B5D00F0FE97 /* Debug */,
+				EF756CE4192A6B5D00F0FE97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF756CAB192A6B5D00F0FE97 /* Project object */;
+}
