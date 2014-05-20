@@ -63,6 +63,7 @@ static const uint32_t worldCategory = 0x1 << 2;
         pipe.physicsBody.affectedByGravity = NO;
         pipe.physicsBody.dynamic = NO;
         pipe.physicsBody.categoryBitMask = pipeCategory;
+        //pipe.physicsBody.collisionBitMask = pipeCategory;
         pipe.hidden = YES;
         [self.bottomPipes insertObject:pipe atIndex:0];
         if (self.bottomPipes.count > 1)
@@ -83,6 +84,7 @@ static const uint32_t worldCategory = 0x1 << 2;
         pipe.physicsBody.affectedByGravity = NO;
         pipe.physicsBody.dynamic = NO;
         pipe.physicsBody.categoryBitMask = pipeCategory;
+        //pipe.physicsBody.collisionBitMask = pipeCategory;
         pipe.hidden = YES;
         [self.topPipes insertObject:pipe atIndex:0];
         if (self.topPipes.count > 1)
@@ -108,6 +110,7 @@ static const uint32_t worldCategory = 0x1 << 2;
     self.mainCharacter.physicsBody.mass = .02;
     self.mainCharacter.physicsBody.categoryBitMask = flappyCategory;
     self.mainCharacter.physicsBody.contactTestBitMask = pipeCategory;
+    self.mainCharacter.physicsBody.collisionBitMask = flappyCategory;
 }
 
 -(void)setupScrollingBackgrounds
