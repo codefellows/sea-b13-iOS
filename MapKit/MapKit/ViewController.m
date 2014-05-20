@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 @import MapKit;
+@import AVFoundation;
+#define CODE_FELLOWS_COORDINATE CLLocationCoordinate2DMake(47.623548, -122.336212)
 
 @interface ViewController () <UISearchBarDelegate, UISearchDisplayDelegate>
 
@@ -17,6 +19,13 @@
 @end
 
 @implementation ViewController
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    [_mapView setRegion:MKCoordinateRegionMakeWithDistance(CODE_FELLOWS_COORDINATE, 1000, 1000) animated:YES];
+    
+}
 
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar
 {
@@ -51,6 +60,7 @@
         
         [self.searchDisplayController.searchResultsTableView reloadData];
     }];
+    
 }
 
 #pragma mark - SearchBar Table DataSource
@@ -62,11 +72,11 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *IDENTIFIER = @"SearchResultsCell";
+    static NSString *identifier = @"SearchCell";
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:IDENTIFIER];
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:IDENTIFIER];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:identifier];
     }
     
     MKMapItem *item = _results.mapItems[indexPath.row];
@@ -83,9 +93,51 @@
     
     MKMapItem *item = _results.mapItems[indexPath.row];
     [_mapView addAnnotation:item.placemark];
-    [_mapView selectAnnotation:item.placemark animated:YES];
-    [_mapView setCenterCoordinate:item.placemark.location.coordinate animated:YES];
-    [_mapView setUserTrackingMode:MKUserTrackingModeNone];
     
+    // Generate route
+    NSLog(@"Generating Routes");
+    
+    MKDirectionsRequest *request = [[MKDirectionsRequest alloc] init];
+    
+    request.source = [MKMapItem mapItemForCurrentLocation];
+    
+    request.destination = item;
+    request.requestsAlternateRoutes = YES;
+    MKDirections *directions =
+    [[MKDirections alloc] initWithRequest:request];
+    
+    [directions calculateDirectionsWithCompletionHandler:
+     ^(MKDirectionsResponse *response, NSError *error) {
+         if (error) {
+             NSLog(@"Error Calculating Directions: %@", error);
+         } else {
+             [self showRoute:response];
+         }
+     }];
 }
+
+-(void)showRoute:(MKDirectionsResponse *)response
+{
+    for (MKRoute *route in response.routes)
+    {
+        [_mapView addOverlay:route.polyline level:MKOverlayLevelAboveRoads];
+        AVSpeechSynthesizer *synth = [[AVSpeechSynthesizer alloc] init];
+
+        for (MKRouteStep *step in route.steps)
+        {
+            NSLog(@"%@", step.instructions);
+            [synth speakUtterance:[AVSpeechUtterance speechUtteranceWithString:step.instructions]];
+        }
+    }
+}
+
+- (MKOverlayRenderer *)mapView:(MKMapView *)mapView rendererForOverlay:(id < MKOverlay >)overlay
+{
+    MKPolylineRenderer *renderer =
+    [[MKPolylineRenderer alloc] initWithOverlay:overlay];
+    renderer.strokeColor = [UIColor blueColor];
+    renderer.lineWidth = 5.0;
+    return renderer;
+}
+
 @end

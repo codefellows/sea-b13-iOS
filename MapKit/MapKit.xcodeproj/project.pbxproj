@@ -22,6 +22,7 @@
 		EFBFA411192BC4D200F03072 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EFBFA40F192BC4D200F03072 /* InfoPlist.strings */; };
 		EFBFA413192BC4D200F03072 /* MapKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EFBFA412192BC4D200F03072 /* MapKitTests.m */; };
 		EFBFA41D192BC56A00F03072 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFBFA41C192BC56A00F03072 /* MapKit.framework */; };
+		EFBFA41F192BCD5100F03072 /* cf_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = EFBFA41E192BCD5100F03072 /* cf_logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		EFBFA410192BC4D200F03072 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EFBFA412192BC4D200F03072 /* MapKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapKitTests.m; sourceTree = "<group>"; };
 		EFBFA41C192BC56A00F03072 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		EFBFA41E192BCD5100F03072 /* cf_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cf_logo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 		EFBFA3ED192BC4D200F03072 /* MapKit */ = {
 			isa = PBXGroup;
 			children = (
+				EFBFA41E192BCD5100F03072 /* cf_logo.png */,
 				EFBFA3F6192BC4D200F03072 /* AppDelegate.h */,
 				EFBFA3F7192BC4D200F03072 /* AppDelegate.m */,
 				EFBFA3F9192BC4D200F03072 /* Main.storyboard */,
@@ -205,6 +208,9 @@
 				TargetAttributes = {
 					EFBFA3E3192BC4D200F03072 = {
 						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
 							com.apple.iOS = {
 								enabled = 1;
 							};
@@ -242,6 +248,7 @@
 				EFBFA400192BC4D200F03072 /* Images.xcassets in Resources */,
 				EFBFA3F2192BC4D200F03072 /* InfoPlist.strings in Resources */,
 				EFBFA3FB192BC4D200F03072 /* Main.storyboard in Resources */,
+				EFBFA41F192BCD5100F03072 /* cf_logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
