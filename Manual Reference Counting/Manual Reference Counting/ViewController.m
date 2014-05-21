@@ -17,13 +17,26 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+
+    NSMutableArray *pictures = [[NSMutableArray alloc] init];
+    
+    for (int i=0; i<1000; i++) {
+        // Bad - creates a leak
+        NSData *retainedData = [[NSData alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"gus" ofType:@"jpg"]];
+        // correct - returns an autoreleased NSData object
+        NSData *autoReleasedData = [NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"gus" ofType:@"jpg"]];
+        UIImage *newImage = [[[UIImage alloc] initWithData:retainedData] autorelease];
+        [pictures addObject:newImage];
+    }
+
+    [pictures release];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
+    NSLog(@"Did Received Memory Warning");
 }
 
 @end

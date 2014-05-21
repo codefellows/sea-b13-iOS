@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF5F63D3192D48F400A3CCAD /* gus.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EF5F63D2192D48F400A3CCAD /* gus.jpg */; };
 		EF91F608192CF3DD00261F77 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF91F607192CF3DD00261F77 /* Foundation.framework */; };
 		EF91F60A192CF3DD00261F77 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF91F609192CF3DD00261F77 /* CoreGraphics.framework */; };
 		EF91F60C192CF3DE00261F77 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF91F60B192CF3DE00261F77 /* UIKit.framework */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EF5F63D2192D48F400A3CCAD /* gus.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gus.jpg; sourceTree = "<group>"; };
 		EF91F604192CF3DD00261F77 /* Manual Reference Counting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Manual Reference Counting.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF91F607192CF3DD00261F77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EF91F609192CF3DD00261F77 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -112,6 +114,7 @@
 		EF91F60D192CF3DE00261F77 /* Manual Reference Counting */ = {
 			isa = PBXGroup;
 			children = (
+				EF5F63D2192D48F400A3CCAD /* gus.jpg */,
 				EF91F616192CF3DE00261F77 /* AppDelegate.h */,
 				EF91F617192CF3DE00261F77 /* AppDelegate.m */,
 				EF91F619192CF3DE00261F77 /* Main.storyboard */,
@@ -230,6 +233,7 @@
 			files = (
 				EF91F620192CF3DE00261F77 /* Images.xcassets in Resources */,
 				EF91F612192CF3DE00261F77 /* InfoPlist.strings in Resources */,
+				EF5F63D3192D48F400A3CCAD /* gus.jpg in Resources */,
 				EF91F61B192CF3DE00261F77 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -376,6 +380,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Manual Reference Counting/Manual Reference Counting-Prefix.pch";
 				INFOPLIST_FILE = "Manual Reference Counting/Manual Reference Counting-Info.plist";
@@ -389,6 +394,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Manual Reference Counting/Manual Reference Counting-Prefix.pch";
 				INFOPLIST_FILE = "Manual Reference Counting/Manual Reference Counting-Info.plist";
@@ -456,6 +462,7 @@
 				EF91F638192CF3DE00261F77 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EF91F639192CF3DE00261F77 /* Build configuration list for PBXNativeTarget "Manual Reference CountingTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +471,7 @@
 				EF91F63B192CF3DE00261F77 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
